@@ -1,5 +1,5 @@
 # OpenClockStandard
-an open clock standard for clock designs.  For use on multiple software and [hardware projects](https://github.com/sqfmi/Watchy).
+an open clock standard for clock designs.  For use on multiple software and [hardware](https://github.com/sqfmi/Watchy) [projects](https://github.com/wiz78/WeatherClock).
 
 Format is supported in the clock editing application [clockology for iOS & MacOS](https://clockologyapp.com/) to make the designs portable to other projects.  Other uses might be for [widgets](https://widgetyapp.com/), dashboards, etc. 
 
