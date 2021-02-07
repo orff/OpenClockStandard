@@ -3,6 +3,10 @@
 
 import PackageDescription
 
+let ocs: Target = .target(name: "OpenClockStandard")
+ocs.dependencies = []
+ocs.path = "swift"
+
 let package = Package(
     name: "OpenClockStandard",
     products: [
@@ -18,8 +22,6 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "OpenClockStandard",
-            dependencies: [])
+        ocs
     ]
 )
