@@ -31,6 +31,12 @@ struct ClockLayer: Codable {
     var isHidden: Bool = false
         
     var textOptions: ClockLayerTextOptions?
+    var iconOptions: ClockLayerIconOptions?
+}
+
+struct ClockLayerIconOptions: Codable {
+    var sfSymbolName: String = "heart"
+    var thickness: Int = 3 // 1 - 5
 }
 
 struct ClockLayerTextOptions: Codable {
@@ -61,3 +67,4 @@ enum ClockLayerTextCasing: String, Codable {
 enum ClockLayerTypes: String, Codable {
     case dateTime, text, icon
 }
+
