@@ -32,6 +32,14 @@ struct ClockLayer: Codable {
         
     var textOptions: ClockLayerTextOptions?
     var iconOptions: ClockLayerIconOptions?
+    var dataLabelOptions: ClockLayerDataLabelOptions?
+    var weatherOptions: ClockLayerWeatherOptions?
+}
+
+struct ClockLayerWeatherOptions: Codable {
+    var timeSpan: ClockLayerWeatherTimeSpans = .current
+    var timeSpanOffset : Int = 0
+    var iconsPrefersFill: Bool = true
 }
 
 struct ClockLayerIconOptions: Codable {
@@ -41,7 +49,7 @@ struct ClockLayerIconOptions: Codable {
 
 struct ClockLayerTextOptions: Codable {
     
-    var casingType: ClockLayerTextCasing = .uppercased
+    var casingType: ClockLayerTextCasing = .none
     var fontFamily: String = "SFSystem"
     var fontFilename: String = ""
     var fontDescription: String = ""
@@ -56,15 +64,30 @@ struct ClockLayerTextOptions: Codable {
     
 }
 
+struct ClockLayerDataLabelOptions: Codable {
+    var dataLabelFormat: String = ""
+    var dataLabelFormatDescription: String = ""
+    var unitDisplayLevel: ClockLayerUnitDisplayLevel = .medium
+}
+
+enum ClockLayerWeatherTimeSpans: String, Codable {
+    case current, hourly, daily
+}
+
+enum ClockLayerUnitDisplayLevel: String, Codable {
+    case short, medium, long
+}
+
+
 enum ClockLayerTextJustification: String, Codable {
     case left, centered, right
 }
 
 enum ClockLayerTextCasing: String, Codable {
-    case lower, sentence, uppercased, word
+    case none, lower, sentence, uppercased, word
 }
 
 enum ClockLayerTypes: String, Codable {
-    case dateTime, text, icon
+    case dateTime, text, icon, dataLabel
 }
 
