@@ -11,6 +11,11 @@ import Foundation
 public struct ClockWrapper: Codable {
     public var clockStandard: ClockStandard
     public var images: [[String:String]]
+    
+    public init(clockStandard: ClockStandard, images : [[String:String]]) {
+        self.clockStandard = clockStandard
+        self.images = images
+    }
 }
 
 public struct ClockStandard: Codable {
