@@ -9,15 +9,15 @@
 import Foundation
 
 public struct ClockWrapper: Codable {
-    var clockStandard: ClockStandard
-    var images: [[String:String]]
+    public var clockStandard: ClockStandard
+    public var images: [[String:String]]
 }
 
 public struct ClockStandard: Codable {
-    var version = "1.0" //version of the models
-    var title: String
+    public var version = "1.0" //version of the models
+    public var title: String
     
-    var layers: [ClockLayer]
+    public var layers: [ClockLayer]
 }
 
 public enum ClockLayerTypes: String, Codable {
@@ -25,48 +25,48 @@ public enum ClockLayerTypes: String, Codable {
 }
 
 public struct ClockLayer: Codable {
-    var type: ClockLayerTypes = .text
+    public var type: ClockLayerTypes = .text
 
-    var zIndex: Int = 0 //0 is bottom higher is top. layering
-    var customName: String = "" //each layer can have user generated names or empty
-    var imageFilename: String = "" // filenames for images used in the layer
-    var fillColor: String = "" // fill color ( re used for various types )
+    public var zIndex: Int = 0 //0 is bottom higher is top. layering
+    public var customName: String = "" //each layer can have user generated names or empty
+    public var imageFilename: String = "" // filenames for images used in the layer
+    public var fillColor: String = "" // fill color ( re used for public various types )
  
-    var alpha: String = "1.0" //transparency
-    var horizontalPosition: String = "0.0" //0 is center : negative left
-    var verticalPosition: String = "0.0" //0 is center : negative up
-    var scale: String = "1.0" // 1.0 is normal
-    var angleOffset: String = "0.0" // rotation of the overall layer
-    var isHidden: Bool = false //hide this layer
+    public var alpha: String = "1.0" //transparency
+    public var horizontalPosition: String = "0.0" //0 is center : negative left
+    public var verticalPosition: String = "0.0" //0 is center : negative up
+    public var scale: String = "1.0" // 1.0 is normal
+    public var angleOffset: String = "0.0" // rotation of the overall layer
+    public var isHidden: Bool = false //hide this layer
         
     //optional objects to hold properties for the layers
-    var textOptions: ClockLayerTextOptions?
-    var iconOptions: ClockLayerIconOptions?
-    var dataLabelOptions: ClockLayerDataLabelOptions?
-    var weatherOptions: ClockLayerWeatherOptions?
-    var handOptions: ClockLayerHandOptions?
-    var dataBarOptions: ClockLayerDataBarOptions?
-    var dataRingOptions: ClockLayerDataRingOptions?
+    public var textOptions: ClockLayerTextOptions?
+    public var iconOptions: ClockLayerIconOptions?
+    public var dataLabelOptions: ClockLayerDataLabelOptions?
+    public var weatherOptions: ClockLayerWeatherOptions?
+    public var handOptions: ClockLayerHandOptions?
+    public var dataBarOptions: ClockLayerDataBarOptions?
+    public var dataRingOptions: ClockLayerDataRingOptions?
 }
 
 public struct ClockLayerDataRingOptions: Codable {
-    var format: ClockLayerDataRingFormats = .exerciseTime
-    var width: String = "0.5" //radius of the circle
-    var colors: [String] = [] //array[ count 3] of hex colors for background, start, then end
+    public var format: ClockLayerDataRingFormats = .exerciseTime
+    public var width: String = "0.5" //radius of the circle
+    public var colors: [String] = [] //array[ count 3] of hex colors for background, start, then end
 }
 
 public struct ClockLayerDataBarOptions: Codable {
-    var format: ClockLayerDataRingFormats = .energyBurned
-    var autoColor: Bool = true //automatically set the color of the ring based on format: default false, can ignore for the most part
-    var cornerRadius: String = "0.0" //for rounding off the bars
-    var width: String = "0.2" // not necessarily same scale as the main canvas, but close
-    var height: String = "0.5" // not necessarily same scale as the main canvas, but close
-    var colors: [String] = [] //array[ count 3] of hex colors for background, start, then end
+    public var format: ClockLayerDataRingFormats = .energyBurned
+    public var autoColor: Bool = true //automatically set the color of the ring based on format: default false, can ignore for the most part
+    public var cornerRadius: String = "0.0" //for rounding off the bars
+    public var width: String = "0.2" // not necessarily same scale as the main canvas, but close
+    public var height: String = "0.5" // not necessarily same scale as the main canvas, but close
+    public var colors: [String] = [] //array[ count 3] of hex colors for background, start, then end
 }
 
 public struct ClockLayerHandOptions: Codable {
-    var handType: ClockLayerHandTypes = .hour
-    var handStyle: String = "plain"
+    public var handType: ClockLayerHandTypes = .hour
+    public var handStyle: String = "plain"
     // SecondHandGallery = useImage:true
     /* case SecondHandTypeSwiss, SecondhandTypeSwissCircle, SecondHandTypeRail, SecondHandTypeBlocky, SecondHandTypeRoman, SecondHandTypePointy, SecondHandTypeSquaredHole, SecondHandTypeArrow, SecondHandTypeSphere,
      SecondHandTypeDualTime,
@@ -74,19 +74,19 @@ public struct ClockLayerHandOptions: Codable {
      SecondHandCircleSegmentInverted,
      SecondHandTypeImageMoon, SecondHandTypeImageNumbers,
      SecondHandNodeTypeNone,SecondHandTypeImageSubmariner,SecondHandGallery */
-    var handStyleDescription: String = "" // localized text description of the hand style
-    var useImage: Bool = false // use images instead of vectors
-    var animateClockwise: Bool = true //used usually in combination with images that have numbers to animate in reverse to show numbers increasing for time
-    var imageAnchorX: String = "" //when using images the anchor position ( bottom / centered of the image ) default: 0.5
-    var imageAnchorY: String = "" //when using images the anchor position ( bottom / centered of the image ) default: 0.5
+    public var handStyleDescription: String = "" // localized text description of the hand style
+    public var useImage: Bool = false // use images instead of vectors
+    public var animateClockwise: Bool = true //used usually in combination with images that have numbers to animate in reverse to show numbers increasing for time
+    public var imageAnchorX: String = "" //when using images the anchor position ( bottom / centered of the image ) default: 0.5
+    public var imageAnchorY: String = "" //when using images the anchor position ( bottom / centered of the image ) default: 0.5
 }
 
 public struct ClockLayerWeatherOptions: Codable {
     /* format and other options for weather labels stored in dataLabelOptions */
     /* weather icon options stored in iconOption */
-    var timeSpan: ClockLayerWeatherTimeSpans = .current // time space for weather options
-    var timeSpanOffset : Int = 0 //offset ( in hours or days ) for the future timeSpans
-    var iconsPrefersFill: Bool = true // prefers the weather icons are filled or outline
+    public var timeSpan: ClockLayerWeatherTimeSpans = .current // time space for weather options
+    public var timeSpanOffset : Int = 0 //offset ( in hours or days ) for the future timeSpans
+    public var iconsPrefersFill: Bool = true // prefers the weather icons are filled or outline
 }
 
 public struct ClockLayerIconOptions: Codable {
@@ -94,16 +94,16 @@ public struct ClockLayerIconOptions: Codable {
     // TODO: map these to some good free or paid icon packs: https://www.flaticon.com/packs
     // SFNames added to enum SFIconNames
     // is name has "Custom" text in it, it is shipped as a "custom" SVG in clockologycase currently these are: runnerCustom, stepsCustom , stairsCustom
-    var sfSymbolName: String = "heart"
-    var thickness: Int = 3 // 1 - 5. 3 is default
+    public var sfSymbolName: String = "heart"
+    public var thickness: Int = 3 // 1 - 5. 3 is default
 }
 
 public struct ClockLayerTextOptions: Codable {
-    var casingType: ClockLayerTextCasing = .none
-    var fontFamily: String = "SFSystem" // https://developer.apple.com/fonts/
-    var fontFilename: String = ""
-    var fontDescription: String = ""
-    var dateTimeFormat: String = ""
+    public var casingType: ClockLayerTextCasing = .none
+    public var fontFamily: String = "SFSystem" // https://developer.apple.com/fonts/
+    public var fontFilename: String = ""
+    public var fontDescription: String = ""
+    public var dateTimeFormat: String = ""
     /* enum options
          HHMMSS,
          HHMM,
@@ -138,18 +138,18 @@ public struct ClockLayerTextOptions: Codable {
          MinuteWordUnit,
          SecondsWordUnit
          */
-    var dateTimeFormatDescription: String = ""
-    var customText: String = "" // designer entered text to show in label
-    var justification: ClockLayerTextJustification = .centered
-    var effectType: String = "" // will be specific to platforms, might want to ignore
-    var outlineWidth: String = "0.0" // pixels to show as outline on the text
-    var outlineColor: String = "" // color for outline
-    var kerning: String = "0.0" // added as adv option, probably ignore
+    public var dateTimeFormatDescription: String = ""
+    public var customText: String = "" // designer entered text to show in label
+    public var justification: ClockLayerTextJustification = .centered
+    public var effectType: String = "" // will be specific to platforms, might want to ignore
+    public var outlineWidth: String = "0.0" // pixels to show as outline on the text
+    public var outlineColor: String = "" // color for outline
+    public var kerning: String = "0.0" // added as adv option, probably ignore
     
 }
 
 public struct ClockLayerDataLabelOptions: Codable {
-    var dataLabelFormat: String = ""
+    public var dataLabelFormat: String = ""
     /*
      //health label formats
      StepsLong,
@@ -194,8 +194,8 @@ public struct ClockLayerDataLabelOptions: Codable {
      Battery,
      BatteryNum,
      */
-    var dataLabelFormatDescription: String = ""
-    var unitDisplayLevel: ClockLayerUnitDisplayLevel = .medium //preference for how much of the units to show along-side the data, IE: 32 degrees celcius v 32
+    public var dataLabelFormatDescription: String = ""
+    public var unitDisplayLevel: ClockLayerUnitDisplayLevel = .medium //preference for how much of the units to show along-side the data, IE: 32 degrees celcius v 32
 }
 
 public enum ClockLayerDataBarStyles: String, Codable {
