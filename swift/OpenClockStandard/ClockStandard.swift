@@ -156,6 +156,7 @@ public struct ClockLayerTextOptions: Codable {
     public var outlineColor: String = "" // color for outline
     public var kerning: String = "0.0" // added as adv option, probably ignore
     
+    public init() { }
 }
 
 public struct ClockLayerDataLabelOptions: Codable {
