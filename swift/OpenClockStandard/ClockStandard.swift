@@ -35,6 +35,29 @@ public enum ClockLayerTypes: String, Codable {
 }
 
 public struct ClockLayer: Codable {
+    
+    internal init(type: ClockLayerTypes = .text, zIndex: Int = 0, customName: String = "", imageFilename: String = "", fillColor: String = "", alpha: String = "1.0", horizontalPosition: String = "0.0", verticalPosition: String = "0.0", scale: String = "1.0", angleOffset: String = "0.0", isHidden: Bool = false, textOptions: ClockLayerTextOptions? = nil, iconOptions: ClockLayerIconOptions? = nil, dataLabelOptions: ClockLayerDataLabelOptions? = nil, weatherOptions: ClockLayerWeatherOptions? = nil, handOptions: ClockLayerHandOptions? = nil, dataBarOptions: ClockLayerDataBarOptions? = nil, dataRingOptions: ClockLayerDataRingOptions? = nil) {
+        
+        self.type = type
+        self.zIndex = zIndex
+        self.customName = customName
+        self.imageFilename = imageFilename
+        self.fillColor = fillColor
+        self.alpha = alpha
+        self.horizontalPosition = horizontalPosition
+        self.verticalPosition = verticalPosition
+        self.scale = scale
+        self.angleOffset = angleOffset
+        self.isHidden = isHidden
+        self.textOptions = textOptions
+        self.iconOptions = iconOptions
+        self.dataLabelOptions = dataLabelOptions
+        self.weatherOptions = weatherOptions
+        self.handOptions = handOptions
+        self.dataBarOptions = dataBarOptions
+        self.dataRingOptions = dataRingOptions
+    }
+    
     public var type: ClockLayerTypes = .text
 
     public var zIndex: Int = 0 //0 is bottom higher is top. layering
@@ -60,12 +83,29 @@ public struct ClockLayer: Codable {
 }
 
 public struct ClockLayerDataRingOptions: Codable {
+    
+    internal init(format: ClockLayerDataRingFormats = .exerciseTime, width: String = "0.5", colors: [String] = []) {
+        self.format = format
+        self.width = width
+        self.colors = colors
+    }
+    
     public var format: ClockLayerDataRingFormats = .exerciseTime
     public var width: String = "0.5" //radius of the circle
     public var colors: [String] = [] //array[ count 3] of hex colors for background, start, then end
 }
 
 public struct ClockLayerDataBarOptions: Codable {
+    
+    internal init(format: ClockLayerDataRingFormats = .energyBurned, autoColor: Bool = true, cornerRadius: String = "0.0", width: String = "0.2", height: String = "0.5", colors: [String] = []) {
+        self.format = format
+        self.autoColor = autoColor
+        self.cornerRadius = cornerRadius
+        self.width = width
+        self.height = height
+        self.colors = colors
+    }
+    
     public var format: ClockLayerDataRingFormats = .energyBurned
     public var autoColor: Bool = true //automatically set the color of the ring based on format: default false, can ignore for the most part
     public var cornerRadius: String = "0.0" //for rounding off the bars
@@ -75,6 +115,17 @@ public struct ClockLayerDataBarOptions: Codable {
 }
 
 public struct ClockLayerHandOptions: Codable {
+    
+    internal init(handType: ClockLayerHandTypes = .hour, handStyle: String = "plain", handStyleDescription: String = "", useImage: Bool = false, animateClockwise: Bool = true, imageAnchorX: String = "", imageAnchorY: String = "") {
+        self.handType = handType
+        self.handStyle = handStyle
+        self.handStyleDescription = handStyleDescription
+        self.useImage = useImage
+        self.animateClockwise = animateClockwise
+        self.imageAnchorX = imageAnchorX
+        self.imageAnchorY = imageAnchorY
+    }
+    
     public var handType: ClockLayerHandTypes = .hour
     public var handStyle: String = "plain"
     // SecondHandGallery = useImage:true
@@ -92,6 +143,13 @@ public struct ClockLayerHandOptions: Codable {
 }
 
 public struct ClockLayerWeatherOptions: Codable {
+    
+    internal init(timeSpan: ClockLayerWeatherTimeSpans = .current, timeSpanOffset: Int = 0, iconsPrefersFill: Bool = true) {
+        self.timeSpan = timeSpan
+        self.timeSpanOffset = timeSpanOffset
+        self.iconsPrefersFill = iconsPrefersFill
+    }
+    
     /* format and other options for weather labels stored in dataLabelOptions */
     /* weather icon options stored in iconOption */
     public var timeSpan: ClockLayerWeatherTimeSpans = .current // time space for weather options
@@ -100,6 +158,12 @@ public struct ClockLayerWeatherOptions: Codable {
 }
 
 public struct ClockLayerIconOptions: Codable {
+    
+    internal init(sfSymbolName: String = "heart", thickness: Int = 3) {
+        self.sfSymbolName = sfSymbolName
+        self.thickness = thickness
+    }
+    
     // https://developer.apple.com/sf-symbols/
     // TODO: map these to some good free or paid icon packs: https://www.flaticon.com/packs
     // SFNames added to enum SFIconNames
@@ -109,6 +173,22 @@ public struct ClockLayerIconOptions: Codable {
 }
 
 public struct ClockLayerTextOptions: Codable {
+    
+    internal init(casingType: ClockLayerTextCasing = .none, fontFamily: String = "SFSystem", fontFilename: String = "", fontDescription: String = "", dateTimeFormat: String = "", dateTimeFormatDescription: String = "", customText: String = "", justification: ClockLayerTextJustification = .centered, effectType: String = "", outlineWidth: String = "0.0", outlineColor: String = "", kerning: String = "0.0") {
+        self.casingType = casingType
+        self.fontFamily = fontFamily
+        self.fontFilename = fontFilename
+        self.fontDescription = fontDescription
+        self.dateTimeFormat = dateTimeFormat
+        self.dateTimeFormatDescription = dateTimeFormatDescription
+        self.customText = customText
+        self.justification = justification
+        self.effectType = effectType
+        self.outlineWidth = outlineWidth
+        self.outlineColor = outlineColor
+        self.kerning = kerning
+    }
+    
     public var casingType: ClockLayerTextCasing = .none
     public var fontFamily: String = "SFSystem" // https://developer.apple.com/fonts/
     public var fontFilename: String = ""
@@ -155,11 +235,16 @@ public struct ClockLayerTextOptions: Codable {
     public var outlineWidth: String = "0.0" // pixels to show as outline on the text
     public var outlineColor: String = "" // color for outline
     public var kerning: String = "0.0" // added as adv option, probably ignore
-    
-    public init() { }
 }
 
 public struct ClockLayerDataLabelOptions: Codable {
+    
+    internal init(dataLabelFormat: String = "", dataLabelFormatDescription: String = "", unitDisplayLevel: ClockLayerUnitDisplayLevel = .medium) {
+        self.dataLabelFormat = dataLabelFormat
+        self.dataLabelFormatDescription = dataLabelFormatDescription
+        self.unitDisplayLevel = unitDisplayLevel
+    }
+    
     public var dataLabelFormat: String = ""
     /*
      //health label formats
