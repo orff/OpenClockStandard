@@ -21,6 +21,6 @@ Check out the JSON in json folder
 
 ## Examples
 
-![Example Image](images/Examples.JPG)
-
 This layout is used for example JSON in the /json folder.  It uses all the supported layer types and has options added for each layer to store the properties.
+
+![Example Image](images/Examples.JPG)
