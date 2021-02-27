@@ -1,0 +1,38 @@
+{
+  "images" : [
+
+  ],
+  "clockStandard" : {
+    "version" : "1.0",
+    "title" : "None",
+    "layers" : [
+      {
+        "angleOffset" : "0.0",
+        "scale" : "0.925",
+        "horizontalPosition" : "0.0",
+        "textOptions" : {
+          "justification" : "centered",
+          "fontDescription" : "Digital MonoSpaced",
+          "customText" : "",
+          "outlineColor" : "#ffffffff",
+          "kerning" : "0.0",
+          "effectType" : "None",
+          "casingType" : "uppercased",
+          "outlineWidth" : "0.0",
+          "fontFilename" : "",
+          "dateTimeFormat" : "HHMMSS",
+          "dateTimeFormatDescription" : "10:30:55 - Hour:Min:Sec",
+          "fontFamily" : "Digital-7Mono"
+        },
+        "type" : "dateTime",
+        "isHidden" : false,
+        "imageFilename" : "",
+        "alpha" : "0.98",
+        "customName" : "",
+        "verticalPosition" : "0.0",
+        "fillColor" : "#FF3B30FF",
+        "zIndex" : 0
+      }
+    ]
+  }
+}
