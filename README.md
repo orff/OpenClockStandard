@@ -18,3 +18,8 @@ Current layer types supported are:
 * Hands: items that rotate automatically based on the time unit they are set to
 
 Check out the JSON in json folder
+
+## Examples
+
+![Example Image](images/Examples.JPG)
+This layout is used for example JSON in the /json folder.
