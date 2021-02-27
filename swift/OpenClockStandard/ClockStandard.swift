@@ -18,6 +18,11 @@ public struct ClockStandard: Codable {
     public var title: String
     
     public var layers: [ClockLayer]
+    
+    public init(title: String, layers : [ClockLayer]) {
+        self.title = title
+        self.layers = layers
+    }
 }
 
 public enum ClockLayerTypes: String, Codable {
