@@ -37,7 +37,7 @@ public struct ClockStandard: Codable {
     
     public var layers: [ClockLayer]
     
-    getEmbeddedClockAssets init(title: String, layers : [ClockLayer]) {
+    public init(title: String, layers : [ClockLayer]) {
         self.title = title
         self.layers = layers
     }
