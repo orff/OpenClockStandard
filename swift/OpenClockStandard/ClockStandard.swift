@@ -20,16 +20,15 @@ public struct ClockWrapper: Codable {
 
 public struct ClockAsset: Codable {
     
-    internal init(imageData: String = "", filename: String = "", hasTransparency: Bool = true) {
+    public var imageData: String = ""
+    public var filename: String = ""
+    public var hasTransparency: Bool = true //use PNG or JPG decoding
+    
+    public init(imageData: String = "", filename: String = "", hasTransparency: Bool = true) {
         self.imageData = imageData
         self.filename = filename
         self.hasTransparency = hasTransparency
     }
-    
-    
-    public var imageData: String = ""
-    public var filename: String = ""
-    public var hasTransparency: Bool = true //use PNG or JPG decoding
 }
 
 public struct ClockStandard: Codable {
@@ -38,7 +37,7 @@ public struct ClockStandard: Codable {
     
     public var layers: [ClockLayer]
     
-    public init(title: String, layers : [ClockLayer]) {
+    getEmbeddedClockAssets init(title: String, layers : [ClockLayer]) {
         self.title = title
         self.layers = layers
     }
