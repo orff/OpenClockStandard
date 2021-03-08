@@ -10,12 +10,26 @@ import Foundation
 
 public struct ClockWrapper: Codable {
     public var clockStandard: ClockStandard
-    public var images: [[String:String]]
+    public var assets: [ClockAsset]
     
-    public init(clockStandard: ClockStandard, images : [[String:String]]) {
+    public init(clockStandard: ClockStandard, assets : [ClockAsset]) {
         self.clockStandard = clockStandard
-        self.images = images
+        self.assets = assets
     }
+}
+
+public struct ClockAsset: Codable {
+    
+    internal init(imageData: String = "", filename: String = "", hasTransparency: Bool = true) {
+        self.imageData = imageData
+        self.filename = filename
+        self.hasTransparency = hasTransparency
+    }
+    
+    
+    public var imageData: String = ""
+    public var filename: String = ""
+    public var hasTransparency: Bool = true //use PNG or JPG decoding
 }
 
 public struct ClockStandard: Codable {
