@@ -240,8 +240,44 @@ public struct ClockLayerTextOptions: Codable {
          HourWordUnit,
          MinuteWordUnit,
          SecondsWordUnit
+     
          */
     public var dateTimeFormatDescription: String = ""
+    /*
+     case .Battery: description = "Battery %"
+     case .BatteryNum: "Battery"
+     case .DA: "Tue - Day Short"
+     case .DL: "Tuesday - Day Full"
+     case .DADD: "Tue 5 - Day Short & Num"
+     case .DD: "05 - Day Num"
+     case .DDAuto: "5 - Day Num"
+     case .DDMM: "5 Nov - Day Num & Month"
+     case .MMDD: "Nov 5 - Month & Day Num"
+     case .MO: "Nov - Short Month"
+     case .ML: "November - Full Month"
+     case .MN: "11 - Month Num"
+     case .HHMM: "10:30 - Hour:Min"
+     case .HHMMPM: "10:30 pm - Hour:Min pm"
+     case .HHMMSS: "10:30:55 - Hour:Min:Sec"
+     case .HH: "10 - Hour"
+     case .MM: "30 - Min"
+     case .SS: "55 -sec"
+     case .PM: "AM - am/pm"
+     case .DY: "3 - Day of Year"
+     case .DW: "1 - Day of Week"
+     case .WY: "32 - Week of the Year"
+     case .YY: "20 - year"
+     case .YYYY: "2020 - year"
+     case .City: "Chicago - time zone city"
+     case .HourWord: "Twelve - hour as word"
+     case .MinuteWord: "Thirty - minute as word"
+     case .SecondsWord: "Fifty Nine - second as word"
+     case .HourWordUnit: "Twelve Hours - hour as word + unit"
+     case .MinuteWordUnit: "Thirty Minutes - minute as word + unit"
+     case .SecondsWordUnit: "Fifty-Nine Seconds - second as word + unit"
+     case .Colon: ": - colon"
+     case .Slash: "/ - slash"
+     */
     public var customText: String = "" // designer entered text to show in label
     public var justification: ClockLayerTextJustification = .centered
     public var effectType: String = "" // will be specific to platforms, might want to ignore
