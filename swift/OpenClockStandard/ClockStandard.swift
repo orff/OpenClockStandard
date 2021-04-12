@@ -129,10 +129,11 @@ public struct ClockLayerDataBarOptions: Codable {
 
 public struct ClockLayerHandOptions: Codable {
     
-    public init(handType: ClockLayerHandTypes = .hour, handStyle: String = "plain", handStyleDescription: String = "", useImage: Bool = false, animateClockwise: Bool = true, imageAnchorX: String = "", imageAnchorY: String = "") {
+    public init(handType: ClockLayerHandTypes = .hour, handStyle: String = "plain", handStyleDescription: String = "", animationType: String = "", useImage: Bool = false, animateClockwise: Bool = true, imageAnchorX: String = "", imageAnchorY: String = "") {
         self.handType = handType
         self.handStyle = handStyle
         self.handStyleDescription = handStyleDescription
+        self.animationType = animationType
         self.useImage = useImage
         self.animateClockwise = animateClockwise
         self.imageAnchorX = imageAnchorX
@@ -149,6 +150,7 @@ public struct ClockLayerHandOptions: Codable {
      SecondHandTypeImageMoon, SecondHandTypeImageNumbers,
      SecondHandNodeTypeNone,SecondHandTypeImageSubmariner,SecondHandGallery */
     public var handStyleDescription: String = "" // localized text description of the hand style
+    public var animationType: String = "" // will be specific to platforms, might want to ignore
     public var useImage: Bool = false // use images instead of vectors
     public var animateClockwise: Bool = true //used usually in combination with images that have numbers to animate in reverse to show numbers increasing for time
     public var imageAnchorX: String = "" //when using images the anchor position ( bottom / centered of the image ) default: 0.5
