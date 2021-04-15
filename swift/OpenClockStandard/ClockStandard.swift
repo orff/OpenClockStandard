@@ -134,6 +134,19 @@ public struct ClockLayerHandOptions: Codable {
         self.handStyle = handStyle
         self.handStyleDescription = handStyleDescription
         self.animationType = animationType
+        
+    /*
+        animationtypes: SecondHandMovementStep, SecondHandMovementStepOver, SecondHandMovementSmooth, SecondHandMovementOscillate,SecondHandMovementMechanical,SecondHandMovementStop2Go
+ 
+         Step: one frame per second, rotating like a minute hand does
+         Step Over: high fps - goes past the angle about 20 degrees then animates back to the correct angle
+         Smooth: high fps - uses millesecond to calculate correct angle
+         Oscillate: high fps - moves similar to smooth, but looks more like sin wave movement
+         Mechanical: very high fps - uses milleseconds, but jumps to posision and skeps frames to look like a stopwatch style movement
+         Stop2Go: very high fps - a combination of mechanical and oscillate
+ */
+        
+        
         self.useImage = useImage
         self.animateClockwise = animateClockwise
         self.imageAnchorX = imageAnchorX
