@@ -95,6 +95,7 @@
                   "fontFamily",
                   "fontFilename",
                   "fontDescription",
+                  "dateTimeFormatDescription",
                   "customText",
                   "effectType",
                   "outlineWidth",
@@ -102,6 +103,10 @@
                   "kerning"
                 ],
                 "properties": {
+
+                  "dateTimeFormatDescription": {
+                    "type": "string"
+                  },
 
                 "fontFamily": {
                     "type": "string"
