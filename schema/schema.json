@@ -33,7 +33,16 @@
             "type": "object",
             "required": [
               "type",
-              "zIndex"
+              "zIndex",
+              "customName",
+              "imageFilename",
+              "fillColor",
+              "alpha",
+              "horizontalPosition",
+              "verticalPosition",
+              "scale",
+              "angleOffset",
+              "isHidden"
             ],
             "properties": {
               "zIndex": {
@@ -82,17 +91,46 @@
               },
               "textOptions": {
                 "type": "object",
+                "required": [
+                  "fontFilename",
+                  "fontDescription",
+                  "customText",
+                  "effectType",
+                  "outlineWidth",
+                  "outlineColor",
+                  "kerning"
+                ],
                 "properties": {
 
-                  "fontFamily": {
+                "fontFilename": {
                     "type": "string"
                   },
 
-                  "fontDescription": {
+                  "fontFilename": {
                     "type": "string"
                   },
 
                   "customText": {
+                    "type": "string"
+                  },
+
+                  "customText": {
+                    "type": "string"
+                  },
+
+                  "effectType": {
+                    "type": "string"
+                  },
+
+                  "outlineWidth": {
+                    "type": "string"
+                  },
+
+                  "outlineColor": {
+                    "type": "string"
+                  },
+
+                  "kerning": {
                     "type": "string"
                   },
 
