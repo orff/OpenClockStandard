@@ -3,7 +3,7 @@ an open clock standard for clock designs.  For use on multiple software and [har
 
 Format is supported in the clock editing application [clockology for iOS & MacOS](https://clockologyapp.com/) to make the designs portable to other projects.  Other uses might be for [widgets](https://widgetyapp.com/), dashboards, etc. 
 
-### JSON Schema
+## JSON Schema
 
 The schema used to define a clock face can be found in [schema/schema.json](schema/schema.json).
 
