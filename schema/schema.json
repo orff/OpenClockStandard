@@ -92,6 +92,7 @@
               "textOptions": {
                 "type": "object",
                 "required": [
+                  "fontFamily",
                   "fontFilename",
                   "fontDescription",
                   "customText",
@@ -102,6 +103,9 @@
                 ],
                 "properties": {
 
+                "fontFamily": {
+                    "type": "string"
+                  },
                 "fontFilename": {
                     "type": "string"
                   },
