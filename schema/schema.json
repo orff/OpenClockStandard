@@ -33,16 +33,7 @@
             "type": "object",
             "required": [
               "type",
-              "zIndex",
-              "customName",
-              "imageFilename",
-              "fillColor",
-              "alpha",
-              "horizontalPosition",
-              "verticalPosition",
-              "scale",
-              "angleOffset",
-              "isHidden"
+              "zIndex"
             ],
             "properties": {
               "zIndex": {
@@ -91,17 +82,6 @@
               },
               "textOptions": {
                 "type": "object",
-                "required": [
-                  "fontFamily",
-                  "fontFilename",
-                  "fontDescription",
-                  "dateTimeFormatDescription",
-                  "customText",
-                  "effectType",
-                  "outlineWidth",
-                  "outlineColor",
-                  "kerning"
-                ],
                 "properties": {
 
                   "dateTimeFormatDescription": {
