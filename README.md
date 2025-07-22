@@ -3,6 +3,12 @@ an open clock standard for clock designs.  For use on multiple software and [har
 
 Format is supported in the clock editing application [clockology for iOS & MacOS](https://clockologyapp.com/) to make the designs portable to other projects.  Other uses might be for [widgets](https://widgetyapp.com/), dashboards, etc. 
 
+### JSON Schema
+
+The schema used to define a clock face can be found in [schema/schema.json](schema/schema.json).
+
+It follows JSON Schema Draft 2020-12 and is used to validate and generate compatible `.ocs` files for OpenClockStandard.
+
 ## Implementations
 
 * [Clockology](https://clockologyapp.com/) can export clocks on iOS and MacOS
