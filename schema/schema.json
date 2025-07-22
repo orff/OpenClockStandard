@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenClockStandard Clock File",
+  "type": "object",
+  "properties": {
+    "assets": {
+      "type": "array",
+      "description": "List of base64-encoded assets",
+      "items": {
+        "type": "object"
+      }
+    },
+    "clockStandard": {
+      "type": "object",
+      "required": [
+        "version",
+        "title",
+        "layers"
+      ],
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Schema version"
+        },
+        "title": {
+          "type": "string",
+          "description": "Name of the clock face"
+        },
+        "layers": {
+          "type": "array",
+          "description": "Clock layers to render in z-order",
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "zIndex"
+            ],
+            "properties": {
+              "zIndex": {
+                "type": "integer"
+              },
+              "alpha": {
+                "type": "string"
+              },
+              "customName": {
+                "type": "string"
+              },
+              "verticalPosition": {
+                "type": "string"
+              },
+              "isHidden": {
+                "type": "boolean"
+              },
+              "fillColor": {
+                "type": "string"
+              },
+              "horizontalPosition": {
+                "type": "string"
+              },
+              "angleOffset": {
+                "type": "string"
+              },
+              "scale": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "dateTime",
+                  "text",
+                  "icon",
+                  "dataLabel",
+                  "image",
+                  "hand",
+                  "dataBar",
+                  "dataRing",
+                  "batteryIndicator"
+                ]
+              },
+              "imageFilename": {
+                "type": "string"
+              },
+              "textOptions": {
+                "type": "object",
+                "properties": {
+                  "justification": {
+                    "type": "string",
+                    "enum": [
+                      "left",
+                      "right",
+                      "centered"
+                    ]
+                  },
+                  "casingType": {
+                    "type": "string",
+                    "enum": [
+                      "none", "lower", "sentence", "uppercased", "word"
+                    ]
+                  },
+                  "dateTimeFormat": {
+                    "type": "string",
+                    "enum": [
+                      "HHMMSS",
+                      "HHMM",
+                      "HHMMPM",
+                      "HH",
+                      "MM",
+                      "SS",
+                      "PM",
+                      "DADD",
+                      "DDMM",
+                      "MMDD",
+                      "MO",
+                      "ML",
+                      "MN",
+                      "DA",
+                      "DD",
+                      "DDAuto",
+                      "DL",
+                      "DY",
+                      "DW",
+                      "WY",
+                      "YY",
+                      "YYYY",
+                      "Colon",
+                      "Slash",
+                      "City",
+                      "Country",
+                      "HourWord",
+                      "MinuteWord",
+                      "SecondsWord",
+                      "HourWordUnit",
+                      "MinuteWordUnit",
+                      "SecondsWordUnit"
+                    ]
+                  }
+                }
+              },
+              "handOptions": {
+                "type": "object",
+                "properties": {
+                  "handType": {
+                    "type": "string",
+                    "enum": [
+                      "second",
+                      "minute", 
+                      "hour"
+                    ]
+                  }
+                }
+              },
+              "dataLabelOptions": {
+                "type": "object",
+                "properties": {
+                  "unitDisplayLevel": {
+                    "type": "string",
+                    "enum": [
+                      "short",
+                      "medium",
+                      "long"
+                    ]
+                  },
+                  "dataLabelFormat": {
+                    "type": "string",
+                    "enum": [
+                      "Steps",
+                      "StepsLong",
+                      "StepsShort",
+                      "StepsSymbol",
+                      "HeartRate",
+                      "EnergyBurned",
+                      "EnergyBurnedGoal",
+                      "ExerciseTime",
+                      "ExerciseTimeGoal",
+                      "StandTime",
+                      "StandTimeGoal",
+                      "ActivitySummary",
+                      "GoalSummary",
+                      "GoalSummaryPercent",
+                      "GoalSummaryPercentWithSymbols",
+                      "DistanceWalkRun",
+                      "DistanceWalkRunUnit",
+                      "FlightsClimbed",
+                      "Temperature",
+                      "TempertureMin",
+                      "TempertureMax",
+                      "Sunrise",
+                      "Sunset",
+                      "FeelsLike",
+                      "ChanceOfPrecip",
+                      "RainAmount",
+                      "WeatherDescription",
+                      "WeatherDescriptionCaps",
+                      "WeatherIcon",
+                      "WeatherDailyDayTemp",
+                      "WeatherDailyNightTemp",
+                      "WeatherDailyEveTemp",
+                      "WeatherDailyMornTemp",
+                      "AppleTime",
+                      "Battery",
+                      "BatteryNum",
+                      "BatteryLevel"
+                    ]
+                  }
+                }
+              },
+              "iconOptions": {
+                "type": "object"
+              },
+              "weatherOptions": {
+                "type": "object",
+                "properties": {
+                  "timeSpan": {
+                    "type": "string",
+                    "enum": [
+                      "current"
+                    ]
+                  }
+                }
+              },
+              "dataRingOptions": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string",
+                    "enum": [
+                      "energyBurned",
+                      "exerciseTime", 
+                      "standTime", 
+                      "batteryLevel"
+                    ]
+                  }
+                }
+              },
+              "dataBarOptions": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "assets",
+    "clockStandard"
+  ]
+}
