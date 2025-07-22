@@ -83,6 +83,19 @@
               "textOptions": {
                 "type": "object",
                 "properties": {
+
+                  "fontFamily": {
+                    "type": "string"
+                  },
+
+                  "fontDescription": {
+                    "type": "string"
+                  },
+
+                  "customText": {
+                    "type": "string"
+                  },
+
                   "justification": {
                     "type": "string",
                     "enum": [
@@ -139,6 +152,11 @@
               "handOptions": {
                 "type": "object",
                 "properties": {
+
+                  "useImage": {
+                    "type": "boolean"
+                  },
+
                   "handType": {
                     "type": "string",
                     "enum": [
