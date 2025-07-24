@@ -73,7 +73,7 @@ public struct ClockLayerDataBarOptions: Codable {
     
     public var format: ClockLayerDataRingFormats = .energyBurned
     public var autoColor: Bool? = true //automatically set the color of the ring based on format: default false, can ignore for the most part
-    public var cornerRadius: String? = "0.0" //for rounding off the bars
+    public var cornerRadius: Float? = 0.0 //for rounding off the bars
     public var width: Float? = 0.2 // not necessarily same scale as the main canvas, but close
     public var height: Float? = 0.5 // not necessarily same scale as the main canvas, but close
     public var colors: [String]? = [] //array[ count 3] of hex colors for background, start, then end

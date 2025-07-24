@@ -128,7 +128,7 @@
         "zIndex" : 4
       },
       {
-        "angleOffset" : "0.0",
+        "angleOffset" : 0.0,
         "scale" : 0.175,
         "horizontalPosition" : -0.85,
         "textOptions" : {
