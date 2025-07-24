@@ -7,13 +7,22 @@
       "type": "array",
       "description": "List of base64-encoded assets",
       "items": {
-        "type": "object"
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+          },
+          "imageData": {
+            "type": "string",
+            "contentEncoding": "base64",
+            "contentMediaType": "image/png"
+          }
+        }
       }
     },
     "clockStandard": {
       "type": "object",
       "required": [
-        "version",
         "title",
         "layers"
       ],
@@ -40,13 +49,15 @@
                 "type": "integer"
               },
               "alpha": {
-                "type": "string"
+                "type": "number",
+                "default": 1.0
               },
               "customName": {
                 "type": "string"
               },
               "verticalPosition": {
-                "type": "string"
+                "type": "number",
+                "default": 0.0
               },
               "isHidden": {
                 "type": "boolean"
@@ -55,13 +66,16 @@
                 "type": "string"
               },
               "horizontalPosition": {
-                "type": "string"
+                "type": "number",
+                "default": 0.0
               },
               "angleOffset": {
-                "type": "string"
+                "type": "number",
+                "default": 0.0
               },
               "scale": {
-                "type": "string"
+                "type": "number",
+                "default": 1.0
               },
               "type": {
                 "type": "string",
@@ -77,13 +91,12 @@
                   "batteryIndicator"
                 ]
               },
-              "imageFilename": {
+              "filename": {
                 "type": "string"
               },
               "textOptions": {
                 "type": "object",
                 "properties": {
-
                   "dateTimeFormatDescription": {
                     "type": "string"
                   },
@@ -96,10 +109,6 @@
                   },
 
                   "fontFilename": {
-                    "type": "string"
-                  },
-
-                  "customText": {
                     "type": "string"
                   },
 
