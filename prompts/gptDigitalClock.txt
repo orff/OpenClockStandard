@@ -3,7 +3,7 @@ Please reference OCS https://github.com/orff/OpenClockStandard and ahere to the 
 Notes:
 - fontFamily goes inside the textOptions and use scale for the text size, fontSize is not in the schema
 - Dont include a line with the schema definition ,EG "$schema": "https://json-schema.org/draft/2020-12/schema"
-- the assets node is require, even if its an empty array
+- the assets node is required, even if its an empty array
 - 0.0 is center for verticalPosition and horizontalPosition, not 0.5.  To position and item to the left of center it would be negative
 - Valid position number range is -1.0 - 1.0
 - good sizes for images are 199 wide and 242 height -- aspect ratio 0.82
