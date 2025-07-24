@@ -74,8 +74,8 @@ public struct ClockLayerDataBarOptions: Codable {
     public var format: ClockLayerDataRingFormats = .energyBurned
     public var autoColor: Bool? = true //automatically set the color of the ring based on format: default false, can ignore for the most part
     public var cornerRadius: String? = "0.0" //for rounding off the bars
-    public var width: String? = "0.2" // not necessarily same scale as the main canvas, but close
-    public var height: String? = "0.5" // not necessarily same scale as the main canvas, but close
+    public var width: Float? = 0.2 // not necessarily same scale as the main canvas, but close
+    public var height: Float? = 0.5 // not necessarily same scale as the main canvas, but close
     public var colors: [String]? = [] //array[ count 3] of hex colors for background, start, then end
 }
 
@@ -105,8 +105,8 @@ public struct ClockLayerHandOptions: Codable {
     public var animationType: String? = "" // will be specific to platforms, might want to ignore
     public var useImage: Bool? = false // use images instead of vectors
     public var animateClockwise: Bool? = true //used usually in combination with images that have numbers to animate in reverse to show numbers increasing for time
-    public var imageAnchorX: String? = "" //when using images the anchor position ( bottom / centered of the image ) default: 0.5
-    public var imageAnchorY: String? = "" //when using images the anchor position ( bottom / centered of the image ) default: 0.5
+    public var imageAnchorX: Float? = 0.0 //when using images the anchor position ( bottom / centered of the image ) default: 0.5
+    public var imageAnchorY: Float? = 0.0 //when using images the anchor position ( bottom / centered of the image ) default: 0.5
 }
 
 public struct ClockLayerWeatherOptions: Codable {
@@ -209,9 +209,9 @@ public struct ClockLayerTextOptions: Codable {
     public var customText: String? = "" // designer entered text to show in label
     public var justification: ClockLayerTextJustification? = .centered
     public var effectType: String? = "" // will be specific to platforms, might want to ignore
-    public var outlineWidth: String? = "0.0" // pixels to show as outline on the text
+    public var outlineWidth: Float? = 0.0 // pixels to show as outline on the text
     public var outlineColor: String? = "" // color for outline
-    public var kerning: String? = "0.0" // added as adv option, probably ignore
+    public var kerning: Float? = 0.0 // added as adv option, probably ignore
 }
 
 public struct ClockLayerDataLabelOptions: Codable {
