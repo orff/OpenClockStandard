@@ -1,437 +1,421 @@
 {
-  "assets" : [
-
-  ],
-  "clockStandard" : {
-    "version" : "1.0",
-    "title" : "Analog",
-    "layers" : [
+  "assets": [],
+  "clockStandard": {
+    "version": 1.0,
+    "title": "Analog",
+    "layers": [
       {
-        "zIndex" : 0,
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.0",
-        "isHidden" : false,
-        "fillColor" : "#ffffffff",
-        "horizontalPosition" : "0.0",
-        "angleOffset" : "0.0",
-        "type" : "text",
-        "imageFilename" : "",
-        "scale" : "1.225"
+        "zIndex": 0,
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.0,
+        "isHidden": false,
+        "fillColor": "#ffffffff",
+        "horizontalPosition": 0.0,
+        "angleOffset": 0.0,
+        "type": "text",
+        "imageFilename": "",
+        "scale": 1.225
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.4625",
-        "horizontalPosition" : "0.54",
-        "textOptions" : {
-          "justification" : "centered",
-          "fontDescription" : "System \/ San Fransisco",
-          "customText" : "",
-          "outlineColor" : "#ffffffff",
-          "kerning" : "0.0",
-          "effectType" : "roundedFrame",
-          "casingType" : "word",
-          "outlineWidth" : "0.0",
-          "fontFilename" : "",
-          "dateTimeFormat" : "DD",
-          "dateTimeFormatDescription" : "05 - Day Num",
-          "fontFamily" : "SFCompactDisplay-Regular"
+        "angleOffset": 0.0,
+        "scale": 0.4625,
+        "horizontalPosition": 0.54,
+        "textOptions": {
+          "justification": "centered",
+          "fontDescription": "System / San Fransisco",
+          "customText": "",
+          "outlineColor": "#ffffffff",
+          "effectType": "roundedFrame",
+          "casingType": "word",
+          "fontFilename": "",
+          "dateTimeFormat": "DD",
+          "dateTimeFormatDescription": "05 - Day Num",
+          "fontFamily": "SFCompactDisplay-Regular"
         },
-        "type" : "dateTime",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.0",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 1
+        "type": "dateTime",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.0,
+        "fillColor": "#ffffffff",
+        "zIndex": 1
       },
       {
-        "handOptions" : {
-          "animateClockwise" : true,
-          "useImage" : false,
-          "imageAnchorX" : "0.5",
-          "imageAnchorY" : "0.5",
-          "handType" : "hour",
-          "handStyleDescription" : "Boxy",
-          "handStyle" : "HourHandTypeBoxy"
+        "handOptions": {
+          "animateClockwise": true,
+          "useImage": false,
+          "imageAnchorX": 0.5,
+          "imageAnchorY": 0.5,
+          "handType": "hour",
+          "handStyleDescription": "Boxy",
+          "handStyle": "HourHandTypeBoxy"
         },
-        "angleOffset" : "0.0",
-        "scale" : "1.0",
-        "horizontalPosition" : "0.0",
-        "type" : "hand",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.0",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 2
+        "angleOffset": 0.0,
+        "scale": 1.0,
+        "horizontalPosition": 0.0,
+        "type": "hand",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.0,
+        "fillColor": "#ffffffff",
+        "zIndex": 2
       },
       {
-        "handOptions" : {
-          "animateClockwise" : true,
-          "useImage" : false,
-          "imageAnchorX" : "0.5",
-          "imageAnchorY" : "0.5",
-          "handType" : "minute",
-          "handStyleDescription" : "Boxy",
-          "handStyle" : "MinuteHandTypeBoxy"
+        "handOptions": {
+          "animateClockwise": true,
+          "useImage": false,
+          "imageAnchorX": 0.5,
+          "imageAnchorY": 0.5,
+          "handType": "minute",
+          "handStyleDescription": "Boxy",
+          "handStyle": "MinuteHandTypeBoxy"
         },
-        "angleOffset" : "0.0",
-        "scale" : "1.0",
-        "horizontalPosition" : "0.0",
-        "type" : "hand",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.0",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 3
+        "angleOffset": 0.0,
+        "scale": 1.0,
+        "horizontalPosition": 0.0,
+        "type": "hand",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.0,
+        "fillColor": "#ffffffff",
+        "zIndex": 3
       },
       {
-        "handOptions" : {
-          "animateClockwise" : true,
-          "useImage" : false,
-          "imageAnchorX" : "0.5",
-          "imageAnchorY" : "0.5",
-          "handType" : "second",
-          "handStyleDescription" : "Swiss Dot End",
-          "handStyle" : "SecondhandTypeSwissCircle"
+        "handOptions": {
+          "animateClockwise": true,
+          "useImage": false,
+          "imageAnchorX": 0.5,
+          "imageAnchorY": 0.5,
+          "handType": "second",
+          "handStyleDescription": "Swiss Dot End",
+          "handStyle": "SecondhandTypeSwissCircle"
         },
-        "angleOffset" : "0.0",
-        "scale" : "1.0",
-        "horizontalPosition" : "0.0",
-        "type" : "hand",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.0",
-        "fillColor" : "#FF3B30FF",
-        "zIndex" : 4
+        "angleOffset": 0.0,
+        "scale": 1.0,
+        "horizontalPosition": 0.0,
+        "type": "hand",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.0,
+        "fillColor": "#FF3B30FF",
+        "zIndex": 4
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.6",
-        "horizontalPosition" : "0.05",
-        "textOptions" : {
-          "justification" : "centered",
-          "fontDescription" : "System \/ San Fransisco",
-          "customText" : "",
-          "outlineColor" : "#ffffffff",
-          "kerning" : "0.0",
-          "effectType" : "None",
-          "casingType" : "uppercased",
-          "outlineWidth" : "0.0",
-          "fontFilename" : "",
-          "dateTimeFormat" : "HHMM",
-          "dateTimeFormatDescription" : "10:30 - Hour:Min",
-          "fontFamily" : "SFCompactDisplay-Regular"
+        "angleOffset": 0.0,
+        "scale": 0.6,
+        "horizontalPosition": 0.05,
+        "textOptions": {
+          "justification": "centered",
+          "fontDescription": "System / San Fransisco",
+          "customText": "",
+          "outlineColor": "#ffffffff",
+          "effectType": "None",
+          "casingType": "uppercased",
+          "fontFilename": "",
+          "dateTimeFormat": "HHMM",
+          "dateTimeFormatDescription": "10:30 - Hour:Min",
+          "fontFamily": "SFCompactDisplay-Regular"
         },
-        "type" : "dateTime",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "-0.7",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 5
+        "type": "dateTime",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": "-0.7",
+        "fillColor": "#ffffffff",
+        "zIndex": 5
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.5",
-        "horizontalPosition" : "-0.45",
-        "textOptions" : {
-          "justification" : "centered",
-          "fontDescription" : "System \/ San Fransisco",
-          "customText" : "MH",
-          "outlineColor" : "#ffffffff",
-          "kerning" : "0.0",
-          "effectType" : "None",
-          "casingType" : "uppercased",
-          "outlineWidth" : "0.0",
-          "fontFilename" : "",
-          "dateTimeFormat" : "HHMM",
-          "dateTimeFormatDescription" : "10:30 - Hour:Min",
-          "fontFamily" : "SFCompactDisplay-Regular"
+        "angleOffset": 0.0,
+        "scale": 0.5,
+        "horizontalPosition": -0.45,
+        "textOptions": {
+          "justification": "centered",
+          "fontDescription": "System / San Fransisco",
+          "customText": "MH",
+          "outlineColor": "#ffffffff",
+          "effectType": "None",
+          "casingType": "uppercased",
+          "fontFilename": "",
+          "dateTimeFormat": "HHMM",
+          "dateTimeFormatDescription": "10:30 - Hour:Min",
+          "fontFamily": "SFCompactDisplay-Regular"
         },
-        "type" : "text",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.0",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 6
+        "type": "text",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.0,
+        "fillColor": "#ffffffff",
+        "zIndex": 6
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.6",
-        "horizontalPosition" : "0.41",
-        "textOptions" : {
-          "justification" : "centered",
-          "fontDescription" : "System \/ San Fransisco",
-          "customText" : "",
-          "outlineColor" : "#ffffffff",
-          "kerning" : "0.0",
-          "effectType" : "None",
-          "casingType" : "uppercased",
-          "outlineWidth" : "0.0",
-          "fontFilename" : "",
-          "dateTimeFormat" : "",
-          "dateTimeFormatDescription" : "",
-          "fontFamily" : "SFCompactDisplay-Regular"
+        "angleOffset": 0.0,
+        "scale": 0.6,
+        "horizontalPosition": 0.41,
+        "textOptions": {
+          "justification": "centered",
+          "fontDescription": "System / San Fransisco",
+          "customText": "",
+          "outlineColor": "#ffffffff",
+          "effectType": "None",
+          "casingType": "uppercased",
+          "fontFilename": "",
+          "dateTimeFormat": "",
+          "dateTimeFormatDescription": "",
+          "fontFamily": "SFCompactDisplay-Regular"
         },
-        "dataLabelOptions" : {
-          "dataLabelFormat" : "Steps",
-          "dataLabelFormatDescription" : "13200 - Long Step Count",
-          "unitDisplayLevel" : "long"
+        "dataLabelOptions": {
+          "dataLabelFormat": "Steps",
+          "dataLabelFormatDescription": "13200 - Long Step Count",
+          "unitDisplayLevel": "long"
         },
-        "type" : "dataLabel",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "-0.36",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 7
+        "type": "dataLabel",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": "-0.36",
+        "fillColor": "#ffffffff",
+        "zIndex": 7
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.75",
-        "horizontalPosition" : "-0.41",
-        "iconOptions" : {
-          "thickness" : 3,
-          "sfSymbolName" : "steps.custom"
+        "angleOffset": 0.0,
+        "scale": 0.75,
+        "horizontalPosition": -0.41,
+        "iconOptions": {
+          "thickness": 3,
+          "sfSymbolName": "steps.custom"
         },
-        "type" : "icon",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "-0.36",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 8
+        "type": "icon",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": "-0.36",
+        "fillColor": "#ffffffff",
+        "zIndex": 8
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.6",
-        "horizontalPosition" : "0.57",
-        "textOptions" : {
-          "justification" : "centered",
-          "fontDescription" : "System \/ San Fransisco",
-          "customText" : "",
-          "outlineColor" : "#ffffffff",
-          "kerning" : "0.0",
-          "effectType" : "None",
-          "casingType" : "uppercased",
-          "outlineWidth" : "0.0",
-          "fontFilename" : "",
-          "dateTimeFormat" : "",
-          "dateTimeFormatDescription" : "",
-          "fontFamily" : "SFCompactDisplay-Regular"
+        "angleOffset": 0.0,
+        "scale": 0.6,
+        "horizontalPosition": 0.57,
+        "textOptions": {
+          "justification": "centered",
+          "fontDescription": "System / San Fransisco",
+          "customText": "",
+          "outlineColor": "#ffffffff",
+          "effectType": "None",
+          "casingType": "uppercased",
+          "fontFilename": "",
+          "dateTimeFormat": "",
+          "dateTimeFormatDescription": "",
+          "fontFamily": "SFCompactDisplay-Regular"
         },
-        "dataLabelOptions" : {
-          "dataLabelFormat" : "Temperature",
-          "dataLabelFormatDescription" : "None",
-          "unitDisplayLevel" : "medium"
+        "dataLabelOptions": {
+          "dataLabelFormat": "Temperature",
+          "dataLabelFormatDescription": "None",
+          "unitDisplayLevel": "medium"
         },
-        "type" : "dataLabel",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.6",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 9,
-        "weatherOptions" : {
-          "timeSpanOffset" : 1,
-          "timeSpan" : "current",
-          "iconsPrefersFill" : true
+        "type": "dataLabel",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.6,
+        "fillColor": "#ffffffff",
+        "zIndex": 9,
+        "weatherOptions": {
+          "timeSpanOffset": 1,
+          "timeSpan": "current",
+          "iconsPrefersFill": true
         }
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.6",
-        "horizontalPosition" : "0.19",
-        "textOptions" : {
-          "justification" : "centered",
-          "fontDescription" : "System \/ San Fransisco",
-          "customText" : "",
-          "outlineColor" : "#ffffffff",
-          "kerning" : "0.0",
-          "effectType" : "None",
-          "casingType" : "uppercased",
-          "outlineWidth" : "0.0",
-          "fontFilename" : "",
-          "dateTimeFormat" : "",
-          "dateTimeFormatDescription" : "",
-          "fontFamily" : "SFCompactDisplay-Regular"
+        "angleOffset": 0.0,
+        "scale": 0.6,
+        "horizontalPosition": 0.19,
+        "textOptions": {
+          "justification": "centered",
+          "fontDescription": "System / San Fransisco",
+          "customText": "",
+          "outlineColor": "#ffffffff",
+          "effectType": "None",
+          "casingType": "uppercased",
+          "fontFilename": "",
+          "dateTimeFormat": "",
+          "dateTimeFormatDescription": "",
+          "fontFamily": "SFCompactDisplay-Regular"
         },
-        "dataLabelOptions" : {
-          "dataLabelFormat" : "WeatherIcon",
-          "dataLabelFormatDescription" : "None",
-          "unitDisplayLevel" : "medium"
+        "dataLabelOptions": {
+          "dataLabelFormat": "WeatherIcon",
+          "dataLabelFormatDescription": "None",
+          "unitDisplayLevel": "medium"
         },
-        "iconOptions" : {
-          "thickness" : 3,
-          "sfSymbolName" : "heart"
+        "iconOptions": {
+          "thickness": 3,
+          "sfSymbolName": "heart"
         },
-        "type" : "dataLabel",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.6",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 10,
-        "weatherOptions" : {
-          "timeSpanOffset" : 1,
-          "timeSpan" : "current",
-          "iconsPrefersFill" : true
+        "type": "dataLabel",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.6,
+        "fillColor": "#ffffffff",
+        "zIndex": 10,
+        "weatherOptions": {
+          "timeSpanOffset": 1,
+          "timeSpan": "current",
+          "iconsPrefersFill": true
         }
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.35",
-        "horizontalPosition" : "-0.39",
-        "type" : "dataRing",
-        "isHidden" : false,
-        "dataRingOptions" : {
-          "width" : "0.5",
-          "format" : "energyBurned",
-          "colors" : [
+        "angleOffset": 0.0,
+        "scale": 0.35,
+        "horizontalPosition": "-0.39",
+        "type": "dataRing",
+        "isHidden": false,
+        "dataRingOptions": {
+          "width": "0.5",
+          "format": "energyBurned",
+          "colors": [
             "#F9114F3F",
             "#FA114FFF",
             "#ffffffff"
           ]
         },
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.51",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 11
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.51,
+        "fillColor": "#ffffffff",
+        "zIndex": 11
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.3125",
-        "horizontalPosition" : "-0.39",
-        "type" : "dataRing",
-        "isHidden" : false,
-        "dataRingOptions" : {
-          "width" : "0.5",
-          "format" : "exerciseTime",
-          "colors" : [
+        "angleOffset": 0.0,
+        "scale": 0.3125,
+        "horizontalPosition": "-0.39",
+        "type": "dataRing",
+        "isHidden": false,
+        "dataRingOptions": {
+          "width": "0.5",
+          "format": "exerciseTime",
+          "colors": [
             "#0064FF3F",
             "#0065FFFF",
             "#ffffffff"
           ]
         },
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.51",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 12
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.51,
+        "fillColor": "#ffffffff",
+        "zIndex": 12
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.275",
-        "horizontalPosition" : "-0.39",
-        "type" : "dataRing",
-        "isHidden" : false,
-        "dataRingOptions" : {
-          "width" : "0.5",
-          "format" : "standTime",
-          "colors" : [
+        "angleOffset": 0.0,
+        "scale": 0.275,
+        "horizontalPosition": "-0.39",
+        "type": "dataRing",
+        "isHidden": false,
+        "dataRingOptions": {
+          "width": "0.5",
+          "format": "standTime",
+          "colors": [
             "#99FF013F",
             "#99FF01FF",
             "#ffffffff"
           ]
         },
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.51",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 13
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.51,
+        "fillColor": "#ffffffff",
+        "zIndex": 13
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.2",
-        "horizontalPosition" : "0.07",
-        "textOptions" : {
-          "justification" : "centered",
-          "fontDescription" : "System \/ San Fransisco",
-          "customText" : "",
-          "outlineColor" : "#ffffffff",
-          "kerning" : "0.0",
-          "effectType" : "None",
-          "casingType" : "uppercased",
-          "outlineWidth" : "0.0",
-          "fontFilename" : "",
-          "dateTimeFormat" : "",
-          "dateTimeFormatDescription" : "",
-          "fontFamily" : "SFCompactDisplay-Regular"
+        "angleOffset": 0.0,
+        "scale": 0.2,
+        "horizontalPosition": 0.07,
+        "textOptions": {
+          "justification": "centered",
+          "fontDescription": "System / San Fransisco",
+          "customText": "",
+          "outlineColor": "#ffffffff",
+          "effectType": "None",
+          "casingType": "uppercased",
+          "fontFilename": "",
+          "dateTimeFormat": "",
+          "dateTimeFormatDescription": "",
+          "fontFamily": "SFCompactDisplay-Regular"
         },
-        "dataLabelOptions" : {
-          "dataLabelFormat" : "BatteryLevel",
-          "dataLabelFormatDescription" : "",
-          "unitDisplayLevel" : "short"
+        "dataLabelOptions": {
+          "dataLabelFormat": "BatteryLevel",
+          "dataLabelFormatDescription": "",
+          "unitDisplayLevel": "short"
         },
-        "type" : "dataLabel",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.66",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 14
+        "type": "dataLabel",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.66,
+        "fillColor": "#ffffffff",
+        "zIndex": 14
       },
       {
-        "angleOffset" : "0.0",
-        "scale" : "0.6",
-        "horizontalPosition" : "0.01",
-        "iconOptions" : {
-          "thickness" : 3,
-          "sfSymbolName" : "battery0"
+        "angleOffset": 0.0,
+        "scale": 0.6,
+        "horizontalPosition": 0.01,
+        "iconOptions": {
+          "thickness": 3,
+          "sfSymbolName": "battery0"
         },
-        "type" : "batteryIndicator",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.77",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 15,
-        "dataBarOptions" : {
-          "width" : "0.2",
-          "height" : "0.5",
-          "colors" : [
+        "type": "batteryIndicator",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.77,
+        "fillColor": "#ffffffff",
+        "zIndex": 15,
+        "dataBarOptions": {
+          "width": "0.2",
+          "height": "0.5",
+          "colors": [
             "#00000000",
             "#ffffffff",
             "#ffffffff"
           ],
-          "autoColor" : true,
-          "cornerRadius" : "0.0",
-          "format" : "batteryLevel"
+          "autoColor": true,
+          "cornerRadius": "0.0",
+          "format": "batteryLevel"
         }
       },
       {
-        "zIndex" : 16,
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.0",
-        "isHidden" : false,
-        "fillColor" : "#ffffffff",
-        "horizontalPosition" : "0.0",
-        "angleOffset" : "0.0",
-        "type" : "image",
-        "imageFilename" : "C550E189-5CD1-4167-8BAA-61C7A1A0B774.png",
-        "scale" : "0.5729"
+        "zIndex": 16,
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.0,
+        "isHidden": false,
+        "fillColor": "#ffffffff",
+        "horizontalPosition": 0.0,
+        "angleOffset": 0.0,
+        "type": "image",
+        "imageFilename": "C550E189-5CD1-4167-8BAA-61C7A1A0B774.png",
+        "scale": 0.5729
       }
     ]
   }

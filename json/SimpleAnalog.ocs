@@ -1,76 +1,74 @@
 {
-  "assets" : [
-
-  ],
-  "clockStandard" : {
-    "version" : "1.0",
-    "title" : "None",
-    "layers" : [
+  "assets": [],
+  "clockStandard": {
+    "version": 1.0,
+    "title": "None",
+    "layers": [
       {
-        "handOptions" : {
-          "animateClockwise" : true,
-          "useImage" : false,
-          "imageAnchorX" : "0.5",
-          "imageAnchorY" : "0.5",
-          "handType" : "hour",
-          "handStyleDescription" : "Boxy",
-          "handStyle" : "HourHandTypeBoxy"
+        "handOptions": {
+          "animateClockwise": true,
+          "useImage": false,
+          "imageAnchorX": 0.5,
+          "imageAnchorY": 0.5,
+          "handType": "hour",
+          "handStyleDescription": "Boxy",
+          "handStyle": "HourHandTypeBoxy"
         },
-        "angleOffset" : "0.0",
-        "scale" : "1.0",
-        "horizontalPosition" : "0.0",
-        "type" : "hand",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.0",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 0
+        "angleOffset": 0.0,
+        "scale": 1.0,
+        "horizontalPosition": 0.0,
+        "type": "hand",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.0,
+        "fillColor": "#ffffffff",
+        "zIndex": 0
       },
       {
-        "handOptions" : {
-          "animateClockwise" : true,
-          "useImage" : false,
-          "imageAnchorX" : "0.5",
-          "imageAnchorY" : "0.5",
-          "handType" : "minute",
-          "handStyleDescription" : "Boxy",
-          "handStyle" : "MinuteHandTypeBoxy"
+        "handOptions": {
+          "animateClockwise": true,
+          "useImage": false,
+          "imageAnchorX": 0.5,
+          "imageAnchorY": 0.5,
+          "handType": "minute",
+          "handStyleDescription": "Boxy",
+          "handStyle": "MinuteHandTypeBoxy"
         },
-        "angleOffset" : "0.0",
-        "scale" : "1.0",
-        "horizontalPosition" : "0.0",
-        "type" : "hand",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.0",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 1
+        "angleOffset": 0.0,
+        "scale": 1.0,
+        "horizontalPosition": 0.0,
+        "type": "hand",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.0,
+        "fillColor": "#ffffffff",
+        "zIndex": 1
       },
       {
-        "handOptions" : {
-          "animateClockwise" : true,
-          "useImage" : false,
-          "imageAnchorX" : "0.5",
-          "imageAnchorY" : "0.5",
-          "handType" : "second",
-          "handStyleDescription" : "Blocky",
-          "handStyle" : "SecondHandTypeBlocky"
+        "handOptions": {
+          "animateClockwise": true,
+          "useImage": false,
+          "imageAnchorX": 0.5,
+          "imageAnchorY": 0.5,
+          "handType": "second",
+          "handStyleDescription": "Blocky",
+          "handStyle": "SecondHandTypeBlocky"
         },
-        "angleOffset" : "0.0",
-        "scale" : "1.0",
-        "horizontalPosition" : "0.0",
-        "type" : "hand",
-        "isHidden" : false,
-        "imageFilename" : "",
-        "alpha" : "1.0",
-        "customName" : "",
-        "verticalPosition" : "0.0",
-        "fillColor" : "#ffffffff",
-        "zIndex" : 2
+        "angleOffset": 0.0,
+        "scale": 1.0,
+        "horizontalPosition": 0.0,
+        "type": "hand",
+        "isHidden": false,
+        "imageFilename": "",
+        "alpha": 1.0,
+        "customName": "",
+        "verticalPosition": 0.0,
+        "fillColor": "#ffffffff",
+        "zIndex": 2
       }
     ]
   }
