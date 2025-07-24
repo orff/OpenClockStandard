@@ -8,5 +8,6 @@ Notes:
 - Valid position number range is -1.0 - 1.0
 - good sizes for images are 199 wide and 242 height -- aspect ratio 0.82
 - export files using ocs extension, not json
+- dateTimeFormat property goes inside the textOptions node, not the layer one
 
 Can you make a simple digital clock with big green numbers and using a "fontFamily" of "Digital-7Mono"
