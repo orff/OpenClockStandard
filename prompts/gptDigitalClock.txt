@@ -7,5 +7,6 @@ Notes:
 - 0.0 is center for verticalPosition and horizontalPosition, not 0.5.  To position and item to the left of center it would be negative
 - Valid position number range is -1.0 - 1.0
 - good sizes for images are 199 wide and 242 height -- aspect ratio 0.82
+- export files using ocs extension, not json
 
-Can you make me a simple digital clock with big green numbers and using a "fontFamily" of "Digital-7Mono"
+Can you make a simple digital clock with big green numbers and using a "fontFamily" of "Digital-7Mono"
