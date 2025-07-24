@@ -20,7 +20,7 @@
         "horizontalPosition": 0.0,
         "angleOffset": 0.0,
         "type": "image",
-        "imageFilename": "4A99AFD1-1C73-4FA4-8D04-04F29E898EE3.JPG",
+        "filename": "4A99AFD1-1C73-4FA4-8D04-04F29E898EE3.JPG",
         "scale": 0.3862
       },
       {
@@ -43,7 +43,7 @@
         },
         "type": "dateTime",
         "isHidden": false,
-        "imageFilename": "",
+        "filename": "",
         "alpha": 1.0,
         "customName": "",
         "verticalPosition": 0.76,
@@ -70,7 +70,7 @@
         },
         "type": "dateTime",
         "isHidden": false,
-        "imageFilename": "",
+        "filename": "",
         "alpha": 1.0,
         "customName": "",
         "verticalPosition": 0.34,

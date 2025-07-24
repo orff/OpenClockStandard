@@ -129,7 +129,7 @@
         "imageFilename": "",
         "alpha": 1.0,
         "customName": "",
-        "verticalPosition": "-0.7",
+        "verticalPosition": -0.7,
         "fillColor": "#ffffffff",
         "zIndex": 5
       },
@@ -184,7 +184,7 @@
         "imageFilename": "",
         "alpha": 1.0,
         "customName": "",
-        "verticalPosition": "-0.36",
+        "verticalPosition": -0.36,
         "fillColor": "#ffffffff",
         "zIndex": 7
       },
@@ -201,7 +201,7 @@
         "imageFilename": "",
         "alpha": 1.0,
         "customName": "",
-        "verticalPosition": "-0.36",
+        "verticalPosition": -0.36,
         "fillColor": "#ffffffff",
         "zIndex": 8
       },
@@ -282,11 +282,11 @@
       {
         "angleOffset": 0.0,
         "scale": 0.35,
-        "horizontalPosition": "-0.39",
+        "horizontalPosition": -0.39,
         "type": "dataRing",
         "isHidden": false,
         "dataRingOptions": {
-          "width": "0.5",
+          "width": 0.5,
           "format": "energyBurned",
           "colors": [
             "#F9114F3F",
@@ -304,11 +304,11 @@
       {
         "angleOffset": 0.0,
         "scale": 0.3125,
-        "horizontalPosition": "-0.39",
+        "horizontalPosition": -0.39,
         "type": "dataRing",
         "isHidden": false,
         "dataRingOptions": {
-          "width": "0.5",
+          "width": 0.5,
           "format": "exerciseTime",
           "colors": [
             "#0064FF3F",
@@ -326,11 +326,11 @@
       {
         "angleOffset": 0.0,
         "scale": 0.275,
-        "horizontalPosition": "-0.39",
+        "horizontalPosition": -0.39,
         "type": "dataRing",
         "isHidden": false,
         "dataRingOptions": {
-          "width": "0.5",
+          "width": 0.5,
           "format": "standTime",
           "colors": [
             "#99FF013F",
@@ -392,15 +392,15 @@
         "fillColor": "#ffffffff",
         "zIndex": 15,
         "dataBarOptions": {
-          "width": "0.2",
-          "height": "0.5",
+          "width": 0.2,
+          "height": 0.5,
           "colors": [
             "#00000000",
             "#ffffffff",
             "#ffffffff"
           ],
           "autoColor": true,
-          "cornerRadius": "0.0",
+          "cornerRadius": 0.0,
           "format": "batteryLevel"
         }
       },
