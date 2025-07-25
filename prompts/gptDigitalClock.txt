@@ -10,5 +10,6 @@ Notes:
 - export files using ocs extension, not json
 - dateTimeFormat property goes inside the textOptions node, not the layer one
 - in the layer node, the key for image filename is "filename" not "imageFilename"
+- in the assets array, the inage data key is "imageData" not "data"
 
 Can you make a simple digital clock with big green numbers and using a "fontFamily" of "Digital-7Mono"
