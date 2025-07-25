@@ -33,7 +33,7 @@ Current layer types supported are:
 
 ## Examples
 
-This layout is used for example JSON in the /json folder.  It uses all the supported layer types and has options added for each layer to store the properties.
+This layout is used for example JSON in the /examples folder.  It uses the supported layer types and has options added for each layer to store extra properties.
 
 ![Example Image](images/Examples.JPG)
 
