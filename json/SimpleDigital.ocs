@@ -24,7 +24,7 @@
         },
         "type": "dateTime",
         "isHidden": false,
-        "imageFilename": "",
+        "filename": "",
         "alpha": 0.98,
         "customName": "",
         "verticalPosition": 0.0,
