@@ -31,6 +31,28 @@
           "type": "string",
           "description": "Schema version"
         },
+        "canvas": {
+          "type": "object",
+          "properties": {
+            "width": {
+                "type": "number",
+                "default": 199.0
+              },
+            "height": {
+              "type": "number",
+              "default": 242.0
+            },
+            "type": {
+                "type": "string",
+                "default": "watchFace",
+                "enum": [
+                  "watchFace",
+                  "squareWidget",
+                  "wideWidget"
+                ]
+              },
+          }
+        },
         "title": {
           "type": "string",
           "description": "Name of the clock face"
@@ -57,7 +79,8 @@
               },
               "verticalPosition": {
                 "type": "number",
-                "default": 0.0
+                "default": 0.0,
+                "description": "position on the canvas with a range of -1.0 to 1.0.  0.0 is center. Positive number is down and negative is up",
               },
               "isHidden": {
                 "type": "boolean"
@@ -67,11 +90,13 @@
               },
               "horizontalPosition": {
                 "type": "number",
-                "default": 0.0
+                "default": 0.0,
+                "description": "position on the canvas with a range of -1.0 to 1.0.  0.0 is center",
               },
               "angleOffset": {
                 "type": "number",
-                "default": 0.0
+                "default": 0.0,
+                "description": "angle in degrees to rotate this item on the canvas. Positive is clockwise",
               },
               "scale": {
                 "type": "number",
@@ -79,6 +104,7 @@
               },
               "type": {
                 "type": "string",
+                "description": "dataLabel is used for activity and weather, dateTime is used for labels to show dates and times, hand is for different types of hands on the clock",
                 "enum": [
                   "dateTime",
                   "text",
@@ -87,8 +113,7 @@
                   "image",
                   "hand",
                   "dataBar",
-                  "dataRing",
-                  "batteryIndicator"
+                  "dataRing"
                 ]
               },
               "filename": {
@@ -147,6 +172,7 @@
                     ]
                   },
                   "dateTimeFormat": {
+                    "description": "The format of a text label when the layer type is .dateTime.  Layter type of .text is jut for setting custom text",
                     "type": "string",
                     "enum": [
                       "HHMMSS",
@@ -216,6 +242,7 @@
                   },
                   "dataLabelFormat": {
                     "type": "string",
+                    "description": "used in combination with a dataLabel layer type to set the format",
                     "enum": [
                       "Steps",
                       "StepsLong",
