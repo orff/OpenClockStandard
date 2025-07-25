@@ -5,6 +5,10 @@ Format is supported in the clock editing application [clockology for iOS & MacOS
 
 Hopefully it will be used on multiple software and [hardware](https://github.com/sqfmi/Watchy) [projects](https://github.com/wiz78/WeatherClock) and maybe someday [one of these](https://github.com/Open-Smartwatch/open-smartwatch.github.io).
 
+## AI / LLMs / GPT
+
+A basic prompt tested with GPT 4o to make a digital clock [prompts/gptDigitalClock.txt](prompts/gptDigitalClock.txt).  Some poeple have had success getting GPT to embed background images and layout labels in containers.  This is a WIP, and new prompts will be added soon.
+
 ## JSON Schema
 
 The schema used to define a clock face can be found in [schema/schema.json](schema/schema.json).
