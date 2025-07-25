@@ -139,12 +139,10 @@
           "effectType" : "None",
           "casingType" : "uppercased",
           "fontFilename" : "",
-          "dateTimeFormat" : "",
           "dateTimeFormatDescription" : "",
           "fontFamily" : "SFCompactDisplay-Regular"
         },
-        "dataLabelOptions" : {
-          "dataLabelFormat" : "Steps",
+        "dataLabelOptions" : {          
           "dataLabelFormatDescription" : "13.2k - Short Step Count",
           "unitDisplayLevel" : "short"
         },
@@ -155,7 +153,8 @@
         "customName" : "",
         "verticalPosition" : -0.56,
         "fillColor" : "#ffffffff",
-        "zIndex" : 5
+        "zIndex" : 5,
+        "dataSource" : "Steps"
       },
       {
         "handOptions" : {

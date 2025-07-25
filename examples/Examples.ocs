@@ -170,12 +170,10 @@
           "effectType": "None",
           "casingType": "uppercased",
           "fontFilename": "",
-          "dateTimeFormat": "",
           "dateTimeFormatDescription": "",
           "fontFamily": "SFCompactDisplay-Regular"
         },
         "dataLabelOptions": {
-          "dataLabelFormat": "Steps",
           "dataLabelFormatDescription": "13200 - Long Step Count",
           "unitDisplayLevel": "long"
         },
@@ -186,7 +184,8 @@
         "customName": "",
         "verticalPosition": -0.36,
         "fillColor": "#ffffffff",
-        "zIndex": 7
+        "zIndex": 7,
+        "dataSource" : "Steps"
       },
       {
         "angleOffset": 0.0,
@@ -217,12 +216,10 @@
           "effectType": "None",
           "casingType": "uppercased",
           "fontFilename": "",
-          "dateTimeFormat": "",
           "dateTimeFormatDescription": "",
           "fontFamily": "SFCompactDisplay-Regular"
         },
         "dataLabelOptions": {
-          "dataLabelFormat": "Temperature",
           "dataLabelFormatDescription": "None",
           "unitDisplayLevel": "medium"
         },
@@ -234,6 +231,7 @@
         "verticalPosition": 0.6,
         "fillColor": "#ffffffff",
         "zIndex": 9,
+        "dataSource" : "Temperature",
         "weatherOptions": {
           "timeSpanOffset": 1,
           "timeSpan": "current",
@@ -252,12 +250,10 @@
           "effectType": "None",
           "casingType": "uppercased",
           "fontFilename": "",
-          "dateTimeFormat": "",
           "dateTimeFormatDescription": "",
           "fontFamily": "SFCompactDisplay-Regular"
         },
         "dataLabelOptions": {
-          "dataLabelFormat": "WeatherIcon",
           "dataLabelFormatDescription": "None",
           "unitDisplayLevel": "medium"
         },
@@ -265,6 +261,7 @@
           "thickness": 3,
           "sfSymbolName": "heart"
         },
+        "dataSource" : "WeatherIcon",
         "type": "dataLabel",
         "isHidden": false,
         "filename": "",
@@ -357,12 +354,10 @@
           "effectType": "None",
           "casingType": "uppercased",
           "fontFilename": "",
-          "dateTimeFormat": "",
           "dateTimeFormatDescription": "",
           "fontFamily": "SFCompactDisplay-Regular"
         },
         "dataLabelOptions": {
-          "dataLabelFormat": "BatteryLevel",
           "dataLabelFormatDescription": "",
           "unitDisplayLevel": "short"
         },
@@ -373,39 +368,11 @@
         "customName": "",
         "verticalPosition": 0.66,
         "fillColor": "#ffffffff",
-        "zIndex": 14
+        "zIndex": 14,
+        "dataSource": "BatteryLevel"
       },
       {
-        "angleOffset": 0.0,
-        "scale": 0.6,
-        "horizontalPosition": 0.01,
-        "iconOptions": {
-          "thickness": 3,
-          "sfSymbolName": "battery0"
-        },
-        "type": "batteryIndicator",
-        "isHidden": false,
-        "filename": "",
-        "alpha": 1.0,
-        "customName": "",
-        "verticalPosition": 0.77,
-        "fillColor": "#ffffffff",
         "zIndex": 15,
-        "dataBarOptions": {
-          "width": 0.2,
-          "height": 0.5,
-          "colors": [
-            "#00000000",
-            "#ffffffff",
-            "#ffffffff"
-          ],
-          "autoColor": true,
-          "cornerRadius": 0.0,
-          "format": "batteryLevel"
-        }
-      },
-      {
-        "zIndex": 16,
         "alpha": 1.0,
         "customName": "",
         "verticalPosition": 0.0,

@@ -28,7 +28,8 @@
       ],
       "properties": {
         "version": {
-          "type": "string",
+          "type": "number",
+           "default": 1.0,
           "description": "Schema version"
         },
         "canvas": {
@@ -116,6 +117,42 @@
                   "dataRing"
                 ]
               },
+              "dataSource": {
+                "type": "string",
+                "description": "used in combination with a layer type to set the format",
+                "enum": [
+                  "Steps",
+                  "StepCount",
+                  "HeartRate",
+                  "EnergyBurned",
+                  "EnergyBurnedGoal",
+                  "ExerciseTime",
+                  "ExerciseTimeGoal",
+                  "StandTime",
+                  "StandTimeGoal",
+                  "DistanceWalkRun",
+                  "DistanceWalkRunUnit",
+                  "FlightsClimbed",
+                  "Temperature",
+                  "TempertureMin",
+                  "TempertureMax",
+                  "Sunrise",
+                  "Sunset",
+                  "FeelsLike",
+                  "ChanceOfPrecip",
+                  "RainAmount",
+                  "WeatherDescription",
+                  "WeatherDescriptionCaps",
+                  "WeatherIcon",
+                  "WeatherDailyDayTemp",
+                  "WeatherDailyNightTemp",
+                  "WeatherDailyEveTemp",
+                  "WeatherDailyMornTemp",
+                  "Battery",
+                  "BatteryNum",
+                  "BatteryLevel"
+                ]
+              },
               "filename": {
                 "type": "string"
               },
@@ -146,7 +183,7 @@
                   },
 
                   "outlineWidth": {
-                    "type": "string"
+                    "type": "number"
                   },
 
                   "outlineColor": {
@@ -154,7 +191,7 @@
                   },
 
                   "kerning": {
-                    "type": "string"
+                    "type": "number"
                   },
 
                   "justification": {
@@ -172,7 +209,7 @@
                     ]
                   },
                   "dateTimeFormat": {
-                    "description": "The format of a text label when the layer type is .dateTime.  Layter type of .text is jut for setting custom text",
+                    "description": "The format of a text label when the layer type is .dateTime.  Layer type of .text is jut for setting custom text",
                     "type": "string",
                     "enum": [
                       "HHMMSS",
@@ -239,49 +276,6 @@
                       "medium",
                       "long"
                     ]
-                  },
-                  "dataLabelFormat": {
-                    "type": "string",
-                    "description": "used in combination with a dataLabel layer type to set the format",
-                    "enum": [
-                      "Steps",
-                      "StepsLong",
-                      "StepsShort",
-                      "StepsSymbol",
-                      "HeartRate",
-                      "EnergyBurned",
-                      "EnergyBurnedGoal",
-                      "ExerciseTime",
-                      "ExerciseTimeGoal",
-                      "StandTime",
-                      "StandTimeGoal",
-                      "ActivitySummary",
-                      "GoalSummary",
-                      "GoalSummaryPercent",
-                      "GoalSummaryPercentWithSymbols",
-                      "DistanceWalkRun",
-                      "DistanceWalkRunUnit",
-                      "FlightsClimbed",
-                      "Temperature",
-                      "TempertureMin",
-                      "TempertureMax",
-                      "Sunrise",
-                      "Sunset",
-                      "FeelsLike",
-                      "ChanceOfPrecip",
-                      "RainAmount",
-                      "WeatherDescription",
-                      "WeatherDescriptionCaps",
-                      "WeatherIcon",
-                      "WeatherDailyDayTemp",
-                      "WeatherDailyNightTemp",
-                      "WeatherDailyEveTemp",
-                      "WeatherDailyMornTemp",
-                      "AppleTime",
-                      "Battery",
-                      "BatteryNum",
-                      "BatteryLevel"
-                    ]
                   }
                 }
               },
@@ -321,9 +315,5 @@
         }
       }
     }
-  },
-  "required": [
-    "assets",
-    "clockStandard"
-  ]
+  }
 }
