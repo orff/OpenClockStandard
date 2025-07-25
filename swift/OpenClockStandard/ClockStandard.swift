@@ -51,6 +51,9 @@ public struct ClockLayer: Codable {
     public var scale: Float? = 1.0 // 1.0 is normal
     public var angleOffset: Float? = 0.0 // rotation of the overall layer
     public var isHidden: Bool? = false //hide this layer
+    
+    //importnt for setting the source for dynamic data
+    public var dataSource: ClockLayerDataSources?
         
     //optional objects to hold properties for the layers
     public var textOptions: ClockLayerTextOptions?
@@ -60,6 +63,26 @@ public struct ClockLayer: Codable {
     public var handOptions: ClockLayerHandOptions?
     public var dataBarOptions: ClockLayerDataBarOptions?
     public var dataRingOptions: ClockLayerDataRingOptions?
+}
+
+public enum ClockLayerDataSources: String, Codable {
+    case StepsLong, StepsShort, StepsSymbol, HeartRate, EnergyBurned, EnergyBurnedGoal, ExerciseTime,
+         ExerciseTimeGoal, StandTime, StandTimeGoal, DistanceWalkRun, DistanceWalkRunUnit, FlightsClimbed,
+         
+         Temperature,
+         TempertureMin,
+         TempertureMax,
+         Sunrise,
+         Sunset,
+         FeelsLike,
+         ChanceOfPrecip,
+         RainAmount,
+             
+         WeatherDescription,
+         WeatherDescriptionCaps,
+         WeatherIcon,
+         Battery,
+         BatteryNum
 }
 
 public struct ClockLayerDataRingOptions: Codable {
@@ -215,52 +238,7 @@ public struct ClockLayerTextOptions: Codable {
 }
 
 public struct ClockLayerDataLabelOptions: Codable {
-    
-    public var dataLabelFormat: String = ""
-    /*
-     //health label formats
-     StepsLong,
-     StepsShort,
-     StepsSymbol,
-     HeartRate,
-     EnergyBurned,
-     EnergyBurnedGoal,
-     ExerciseTime,
-     ExerciseTimeGoal,
-     StandTime,
-     StandTimeGoal,
-     ActivitySummary,
-     GoalSummary,
-     GoalSummaryPercent,
-     GoalSummaryPercentWithSymbols,
-     DistanceWalkRun,
-     DistanceWalkRunUnit,
-     FlightsClimbed,
-     
-     //weather label formats
-     Temperature,
-     TempertureMin,
-     TempertureMax,
-     Sunrise,
-     Sunset,
-     FeelsLike,
-     ChanceOfPrecip,
-     RainAmount,
-         
-     WeatherDescription,
-     WeatherDescriptionCaps,
-     WeatherIcon,
-     
-     WeatherDailyDayTemp,
-     WeatherDailyNightTemp,
-     WeatherDailyEveTemp,
-     WeatherDailyMornTemp,
-     
-     //utility label formats
-     AppleTime,
-     Battery,
-     BatteryNum,
-     */
+
     public var dataLabelFormatDescription: String? = ""
     public var unitDisplayLevel: ClockLayerUnitDisplayLevel? = .medium //preference for how much of the units to show along-side the data, IE: 32 degrees celcius v 32
 }
