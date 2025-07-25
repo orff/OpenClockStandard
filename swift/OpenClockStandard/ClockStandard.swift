@@ -85,7 +85,7 @@ public enum ClockLayerDataSources: String, Codable {
          BatteryNum
     
     //allow to decode ignoring case
-        init(from decoder: Decoder) throws {
+        public init(from decoder: Decoder) throws {
             // 1
             let container = try decoder.singleValueContainer()
             // 2
