@@ -66,7 +66,7 @@ public struct ClockLayer: Codable {
 }
 
 public enum ClockLayerDataSources: String, Codable {
-    case StepsLong, StepsShort, StepsSymbol, HeartRate, EnergyBurned, EnergyBurnedGoal, ExerciseTime,
+    case Steps, StepCount, StepsLong, StepsShort, StepsSymbol, HeartRate, EnergyBurned, EnergyBurnedGoal, ExerciseTime,
          ExerciseTimeGoal, StandTime, StandTimeGoal, DistanceWalkRun, DistanceWalkRunUnit, FlightsClimbed,
          
          Temperature,
