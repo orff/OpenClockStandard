@@ -69,7 +69,7 @@ public enum ClockLayerDataSources: String, Codable {
     case steps, stepcount, stepslong, stepsshort, stepssymbol, heartrate, energyburned, energyburnedgoal, exercisetime,
          exercisetimegoal, standtime, standtimegoal, distancewalkrun, distancewalkrununit, flightsclimbed,
          temperature, temperturemin, temperturemax, sunrise, sunset, feelslike, chanceofprecip, rainamount,
-         weatherdescription, weatherdescriptioncaps, weathericon, battery, batterynum
+         weatherdescription, weatherdescriptioncaps, weathericon, battery, batterynum, batterylevel
     
     //allow to decode ignoring case
         public init(from decoder: Decoder) throws {
