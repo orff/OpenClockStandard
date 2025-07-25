@@ -83,6 +83,22 @@ public enum ClockLayerDataSources: String, Codable {
          WeatherIcon,
          Battery,
          BatteryNum
+    
+    //allow to decode ignoring case
+        init(from decoder: Decoder) throws {
+            // 1
+            let container = try decoder.singleValueContainer()
+            // 2
+            let rawString = try container.decode(String.self)
+            
+            // 3
+            if let dataSource = ClockLayerDataSources(rawValue: rawString.lowercased()) {
+                self = dataSource
+            } else {
+                // 4
+                throw DecodingError.dataCorruptedError(in: container, debugDescription: "Cannot initialize UserType from invalid String value \(rawString)")
+            }
+        }
 }
 
 public struct ClockLayerDataRingOptions: Codable {
