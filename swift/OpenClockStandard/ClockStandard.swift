@@ -66,23 +66,10 @@ public struct ClockLayer: Codable {
 }
 
 public enum ClockLayerDataSources: String, Codable {
-    case Steps, StepCount, StepsLong, StepsShort, StepsSymbol, HeartRate, EnergyBurned, EnergyBurnedGoal, ExerciseTime,
-         ExerciseTimeGoal, StandTime, StandTimeGoal, DistanceWalkRun, DistanceWalkRunUnit, FlightsClimbed,
-         
-         Temperature,
-         TempertureMin,
-         TempertureMax,
-         Sunrise,
-         Sunset,
-         FeelsLike,
-         ChanceOfPrecip,
-         RainAmount,
-             
-         WeatherDescription,
-         WeatherDescriptionCaps,
-         WeatherIcon,
-         Battery,
-         BatteryNum
+    case steps, stepcount, stepslong, stepsshort, stepssymbol, heartrate, energyburned, energyburnedgoal, exercisetime,
+         exercisetimegoal, standtime, standtimegoal, distancewalkrun, distancewalkrununit, flightsclimbed,
+         temperature, temperturemin, temperturemax, sunrise, sunset, feelslike, chanceofprecip, rainamount,
+         weatherdescription, weatherdescriptioncaps, weathericon, battery, batterynum
     
     //allow to decode ignoring case
         public init(from decoder: Decoder) throws {
