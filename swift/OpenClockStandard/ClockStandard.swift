@@ -83,7 +83,7 @@ public enum ClockLayerDataSources: String, Codable {
                 self = dataSource
             } else {
                 // 4
-                self = nil
+                self = .unknown
                 //throw DecodingError.dataCorruptedError(in: container, debugDescription: "Cannot initialize UserType from invalid String value \(rawString)")
             }
         }
