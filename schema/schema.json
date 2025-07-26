@@ -87,7 +87,8 @@
                 "type": "boolean"
               },
               "fillColor": {
-                "type": "string"
+                "type": "string",
+                "description": "A hex with four pairs: red, green, blue, then alpha.  Example #FFEE33FF"
               },
               "horizontalPosition": {
                 "type": "number",
