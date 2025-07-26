@@ -13,6 +13,7 @@
         "rules": [
             "you will be outputting JSON following the open clock standard",
             "images should be encoded as base64 and put in the assets node with a filename that matches the filename in an image layer",
+            "background images for watch faces should be 242 height and 199 width, 0.82 ratio",
             "current weather will be fethed by the client application that imports the ocs file",
             "the file should use the .ocs extension. IMPORTANT",
             "For background images DO NOT include text like time or data. IMPORTANT. The client applications will render the text like time and weather dynamically after impoprting the OCS file. Just provide associated layer definitions in OCS schema with position, correct typesm, and any options needed like formatting, text casing, or justification",
