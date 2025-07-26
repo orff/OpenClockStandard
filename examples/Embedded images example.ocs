@@ -23,7 +23,7 @@
   ],
   "clockStandard" : {
     "version" : 1.0,
-    "title" : "None 122-1",
+    "title" : "Embedded images example",
     "layers" : [
       {
         "zIndex" : 0,

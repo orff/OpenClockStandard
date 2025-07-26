@@ -2,7 +2,7 @@
   "assets": [],
   "clockStandard": {
     "version": 1.0,
-    "title": "Analog",
+    "title": "Example of layer types",
     "layers": [
       {
         "zIndex": 0,
@@ -50,7 +50,7 @@
           "imageAnchorY": 0.5,
           "handType": "hour",
           "handStyleDescription": "Boxy",
-          "handStyle": "HourHandTypeBoxy"
+          "handStyle": "boxy"
         },
         "angleOffset": 0.0,
         "scale": 1.0,
@@ -72,7 +72,7 @@
           "imageAnchorY": 0.5,
           "handType": "minute",
           "handStyleDescription": "Boxy",
-          "handStyle": "MinuteHandTypeBoxy"
+          "handStyle": "boxy"
         },
         "angleOffset": 0.0,
         "scale": 1.0,
@@ -94,7 +94,7 @@
           "imageAnchorY": 0.5,
           "handType": "second",
           "handStyleDescription": "Swiss Dot End",
-          "handStyle": "SecondhandTypeSwissCircle"
+          "handStyle": "swissCircle"
         },
         "angleOffset": 0.0,
         "scale": 1.0,

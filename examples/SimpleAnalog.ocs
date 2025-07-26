@@ -2,7 +2,7 @@
   "assets": [],
   "clockStandard": {
     "version": 1.0,
-    "title": "None",
+    "title": "Simple Analog",
     "layers": [
       {
         "handOptions": {
@@ -12,7 +12,7 @@
           "imageAnchorY": 0.5,
           "handType": "hour",
           "handStyleDescription": "Boxy",
-          "handStyle": "HourHandTypeBoxy"
+          "handStyle": "boxy"
         },
         "angleOffset": 0.0,
         "scale": 1.0,
@@ -34,7 +34,7 @@
           "imageAnchorY": 0.5,
           "handType": "minute",
           "handStyleDescription": "Boxy",
-          "handStyle": "MinuteHandTypeBoxy"
+          "handStyle": "boxy"
         },
         "angleOffset": 0.0,
         "scale": 1.0,
@@ -56,7 +56,7 @@
           "imageAnchorY": 0.5,
           "handType": "second",
           "handStyleDescription": "Blocky",
-          "handStyle": "SecondHandTypeBlocky"
+          "handStyle": "blocky"
         },
         "angleOffset": 0.0,
         "scale": 1.0,
@@ -67,7 +67,7 @@
         "alpha": 1.0,
         "customName": "",
         "verticalPosition": 0.0,
-        "fillColor": "#ffffffff",
+        "fillColor": "#ff0000ff",
         "zIndex": 2
       }
     ]
