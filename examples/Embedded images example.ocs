@@ -129,18 +129,18 @@
       },
       {
         "angleOffset" : 0.0,
-        "scale" : 0.175,
+        "scale" : 0.3625,
         "horizontalPosition" : -0.85,
         "textOptions" : {
           "justification" : "centered",
-          "fontDescription" : "System \/ San Fransisco",
+          "fontDescription" : "AzonixRegular",
           "customText" : "",
           "outlineColor" : "#ffffffff",
           "effectType" : "None",
           "casingType" : "uppercased",
           "fontFilename" : "",
           "dateTimeFormatDescription" : "",
-          "fontFamily" : "SFCompactDisplay-Regular"
+          "fontFamily" : "AzonixRegular"
         },
         "dataLabelOptions" : {          
           "dataLabelFormatDescription" : "13.2k - Short Step Count",
