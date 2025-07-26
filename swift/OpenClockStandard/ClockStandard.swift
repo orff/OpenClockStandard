@@ -69,7 +69,7 @@ public enum ClockLayerDataSources: String, Codable {
     case steps, stepcount, stepslong, stepsshort, stepssymbol, heartrate, energyburned, energyburnedgoal, exercisetime,
          exercisetimegoal, standtime, standtimegoal, distancewalkrun, distancewalkrununit, flightsclimbed,
          temperature, temperturemin, temperturemax, sunrise, sunset, feelslike, chanceofprecip, rainamount,
-         weatherdescription, weatherdescriptioncaps, weathericon, battery, batterynum, batterylevel
+         weatherdescription, weatherdescriptioncaps, weathericon, battery, batterynum, batterylevel, unknown
     
     //allow to decode ignoring case
         public init(from decoder: Decoder) throws {
@@ -83,7 +83,8 @@ public enum ClockLayerDataSources: String, Codable {
                 self = dataSource
             } else {
                 // 4
-                throw DecodingError.dataCorruptedError(in: container, debugDescription: "Cannot initialize UserType from invalid String value \(rawString)")
+                self = nil
+                //throw DecodingError.dataCorruptedError(in: container, debugDescription: "Cannot initialize UserType from invalid String value \(rawString)")
             }
         }
 }
