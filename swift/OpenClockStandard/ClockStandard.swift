@@ -120,13 +120,20 @@ public struct ClockLayerHandOptions: Codable {
     
     public var handType: ClockLayerHandTypes = .hour
     public var handStyle: String? = "plain"
-    // SecondHandGallery = useImage:true
-    /* case SecondHandTypeSwiss, SecondhandTypeSwissCircle, SecondHandTypeRail, SecondHandTypeBlocky, SecondHandTypeRoman, SecondHandTypePointy, SecondHandTypeSquaredHole, SecondHandTypeArrow, SecondHandTypeSphere,
-     SecondHandTypeDualTime,
-     SecondHandTypeFancyRed, SecondHandTypeFlatDial, SecondHandTypeThinDial, SecondHandTypePacMan, SecondHandTypeMsPacMan, SecondHandTieFighter, SecondHandRadar, SecondHandTrails,  SecondHandCircleSegment,
-     SecondHandCircleSegmentInverted,
-     SecondHandTypeImageMoon, SecondHandTypeImageNumbers,
-     SecondHandNodeTypeNone,SecondHandTypeImageSubmariner,SecondHandGallery */
+    /* handStyle      
+        "rounded",
+        "classicOutline", 
+        "classic",
+        "swiss",
+        "swissCircle", 
+        "flatDial", 
+        "thinDial", 
+        "blocky", 
+        "arrow", 
+        "roman", 
+        "pie", 
+        "pieInverted" 
+    */
     public var handStyleDescription: String? = "" // localized text description of the hand style
     public var animationType: String? = "" // will be specific to platforms, might want to ignore
     public var useImage: Bool? = false // use images instead of vectors

@@ -263,6 +263,25 @@
                       "minute", 
                       "hour"
                     ]
+                  },
+
+                  "handStyle": {
+                    "type": "string",
+                    "description": "the style of the vector hand. Ignored if useImage = true",
+                    "enum": [
+                      "rounded",
+                      "classicOutline", 
+                      "classic",
+                      "swiss",
+                      "swissCircle", 
+                      "flatDial", 
+                      "thinDial", 
+                      "blocky", 
+                      "arrow", 
+                      "roman", 
+                      "pie", 
+                      "pieInverted"
+                    ]
                   }
                 }
               },
