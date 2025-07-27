@@ -9,6 +9,20 @@ Hopefully it will be used on multiple software and [hardware](https://github.com
 
 A basic prompt tested with GPT 4o to make a digital clock [prompts/gptDigitalClock.txt](prompts/gptDigitalClock.txt).  Some poeple have had success getting GPT to embed background images and layout labels in containers.  This is a WIP, and new prompts will be added soon.
 
+To ensure the AI gets the correct shema with no errors, use this method:
+
+1. "given the following json schema:". 
+2. Attach or paste schema/schema.json](schema/schema.json)
+3. "follow these rules to be a watch face designer:" 
+4. Attach or paste [prompts/jsonClockDesigner.txt](prompts/jsonClockDesigner.txt)
+5. Now add the prompt you want for the design.  
+	*Example:* "make a simple digital clock with big green numbers and using a "fontFamily" of "Digital-7Mono"
+	*More detailed Example:* "make a background in the style of an 80s digital casio watch.  embed this as a background layer in ocs.  also add steps, time, and date labels with a black fillColor.  Use the position of the labels to match the position of the appropraite spaces in the background"
+
+It *should* read the schema from the rules in the jsonClockDesigner prompt [schema/schema.json](schema/schema.json), but attaching it first ensures it will strickly follow it with less errors.  The LLM may still make up new keys or values not in the schema, so sometimes you may have to fix mistakes after importing or edit by hand.  
+
+To check if the json is valid, use [the json validator](https://www.jsonschemavalidator.net/) and paste the schema on the left and the ocs json on the right.
+
 ## JSON Schema
 
 The schema used to define a clock face can be found in [schema/schema.json](schema/schema.json).
