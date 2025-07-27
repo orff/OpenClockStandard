@@ -17,9 +17,11 @@ To ensure the AI gets the correct shema with no errors, use this method:
 4. Attach or paste [prompts/jsonClockDesigner.txt](prompts/jsonClockDesigner.txt)
 5. Now add the prompt you want for the design.  
 	*Example:* "make a simple digital clock with big green numbers and using a "fontFamily" of "Digital-7Mono"
-	*More detailed Example:* "make a background in the style of an 80s digital casio watch.  embed this as a background layer in ocs.  also add steps, time, and date labels with a black fillColor.  Use the position of the labels to match the position of the appropraite spaces in the background"
+	*More detailed Example:* "make a clockology style background image in the style of an 80s digital casio watch. Can you make me a preview of the backgroud image?"
+	... tweak style and issues in image, then ...
+	"looks good.  In the ocs json, embed the image as the first image layer ( base64), then add steps, time, and date labels in the top layers with a black fillColor Use the position of the labels to match the position of the appropriate spaces in the background image."
 
-It *should* read the schema from the rules in the jsonClockDesigner prompt [schema/schema.json](schema/schema.json), but attaching it first ensures it will strickly follow it with less errors.  The LLM may still make up new keys or values not in the schema, so sometimes you may have to fix mistakes after importing or edit by hand.  
+	It *should* read the schema from the rules in the jsonClockDesigner prompt [schema/schema.json](schema/schema.json), but attaching it first ensures it will strickly follow it with less errors.  The LLM may still make up new keys or values not in the schema, so sometimes you may have to fix mistakes after importing or edit by hand.  
 
 To check if the json is valid, use [the json validator](https://www.jsonschemavalidator.net/) and paste the schema on the left and the ocs json on the right.
 
